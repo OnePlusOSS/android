@@ -2,7 +2,7 @@
 <manifest>
   <remote fetch="git://codeaurora.org/" name="caf" review="codeaurora.org"/>
   <default remote="caf" revision="LA.BF64.1.2.2_rb4.23"/>
-  <remote fetch="ssh://git@github.com" name="oneplus" />
+  <remote fetch=".." name="oneplus" />
 
   <project name="device/common" path="MSM8994/android/device/common" revision="59222307bea10506e1f4814bf6687fb4cdcddabe"/>
   <project name="device/generic/arm64" path="MSM8994/android/device/generic/arm64" revision="39249053f37b7f9633eb406af3dbedfea7bf8b3e"/>
