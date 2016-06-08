@@ -3,8 +3,7 @@ Downloading the Source
 1. Repo sync all code with default.xml  
 2. Root your device  
 3. Pull the necessary libraries from your device by executing the script `pull_library.sh`  
-4. After pull_library.sh be executed, a directory  named "vendor" should be generated. Copy this directory to the of project.  
-
+4. After pull_library.sh be executed, a directory  named "vendor" should be generated. Copy this directory to root of project.  
 Building the System  
 ===
 **[Set up environment]**  
