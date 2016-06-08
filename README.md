@@ -1,4 +1,4 @@
-# android
+# Downloading the Source
 1. Repo sync all code with default.xml
 2. Root your device
 3. Pull the necessary libraries from your device by executing the script pull_library.sh
@@ -6,10 +6,10 @@
 
 # Building the System
 [Set up environment]
-Initialize the environment with the envsetup.sh script. 
+Initialize the environment with the envsetup.sh script.
 $ . build/envsetup.sh
 
-[Choose a Target]
+[Choose a Target] 
 Choose which target to build with lunch.
 $ lunch
     enter "15" for msm8994-userdebug
