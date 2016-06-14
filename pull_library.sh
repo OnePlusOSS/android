@@ -1592,25 +1592,17 @@ done
 framework_list="
 cneapiclient.jar
 com.qti.dpmframework.jar
-com.qti.location.sdk.jar
 com.qti.snapdragon.sdk.display.jar
-com.qualcomm.location.vzw_library.jar
 com.qualcomm.qti.GBAHttpAuthentication.jar
 com.quicinc.cne.jar
 ConnectivityExt.jar
 dpmapi.jar
 embmslibrary.jar
 imscmlibrary.jar
-oem-services.jar
-qcnvitems.jar
-qcrilhook.jar
 qmapbridge.jar
-QPerformance.jar
-QtiTelephonyServicelibrary.jar
 rcsimssettings.jar
 rcsservice.jar
 tcmclient.jar
-WfdCommon.jar
 "
 
 for i in ${framework_list}
