@@ -156,7 +156,7 @@
   <project groups="pdk" name="platform/external/libmpeg2" path="external/libmpeg2" revision="0ba16e0057a6fa4b4022d0e77e8186d551434f0d" upstream="LA.HB.1.3.1.c1"/>
   <project groups="pdk-cw-fs" name="platform/external/libmtp" path="external/libmtp" revision="e204c41bf49cadc1de460f0cf902008955b356d9" upstream="LA.HB.1.3.1.c1"/>
   <project name="platform/external/libnetfilter_conntrack" path="external/libnetfilter_conntrack" revision="243985eafc89e86eb8e2d8574e4ab57f5b14b83a" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/libnfc-nci" path="external/libnfc-nci" revision="a16b6bf25ecfbae134f0a680191c9e80077b50cc" upstream="LA.HB.1.3.1.c1"/>
+  <project name="OnePlusOSS/external_libnfc-nci" path="external/libnfc-nci" remote="oneplus" revision="oneplus3/6.0.1"/>
   <project groups="pdk" name="platform/external/libnfc-nxp" path="external/libnfc-nxp" revision="76f8fa7177767cb377f9212e207e3ac16f9b8d48" upstream="LA.HB.1.3.1.c1"/>
   <project name="platform/external/libnfnetlink" path="external/libnfnetlink" revision="80ba60f6a117f73fb4497615511dac44870eacdb" upstream="LA.HB.1.3.1.c1"/>
   <project groups="pdk" name="platform/external/libnl" path="external/libnl" revision="19c48c82efd448e310e8151af749c5f6ec5d321b" upstream="LA.HB.1.3.1.c1"/>
@@ -193,6 +193,7 @@
   <project groups="pdk-cw-fs" name="platform/external/messageformat" path="external/messageformat" revision="a88391404bcb7f994675db3e508697cf96dbaf23" upstream="LA.HB.1.3.1.c1"/>
   <project groups="pdk" name="platform/external/mksh" path="external/mksh" revision="c87de5d0279a299eec916effc751961347ff5eeb" upstream="LA.HB.1.3.1.c1"/>
   <project name="platform/external/mm-dash" path="external/mm-dash" revision="631615e4c7092252dacb1ba3996d9b83314302ca" upstream="LA.HB.1.3.1.c1"/>
+  <project name="OnePlusOSS/external_libp61-jcop-kit" path="MSM8996/android/external/p61-jcop-kit" remote="oneplus" revision="oneplus3/6.0.1"/>
   <project groups="pdk-cw-fs" name="platform/external/mobicore" path="external/mobicore" revision="0ec1dc7accad13a32adb7ffd75171d5e381a441d" upstream="LA.HB.1.3.1.c1"/>
   <project name="platform/external/mockftpserver" path="external/mockftpserver" revision="00dc7bdcf1df9e86789d963984dfc6912a8854c6" upstream="LA.HB.1.3.1.c1"/>
   <project groups="pdk-cw-fs" name="platform/external/mockito" path="external/mockito" revision="c7d7be3cdbefd99229903414cf71308f47973aa5" upstream="LA.HB.1.3.1.c1"/>
@@ -303,7 +304,7 @@
   <project groups="pdk-cw-fs" name="platform/frameworks/webview" path="frameworks/webview" revision="2b9a0f1d1725aad8384b31686081fa4e22209a51" upstream="LA.HB.1.3.1.c1"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/wilhelm" path="frameworks/wilhelm" revision="41bdb8b34ca24455351fc359d7de2e32b0ed06a9" upstream="LA.HB.1.3.1.c1"/>
   <project groups="pdk" name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt" revision="049cf3b60ffbca72a42b796a39ebd38660450ff2" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/hardware/libhardware" path="hardware/libhardware" revision="95b67213bf934f0881079acdd97feaf49362bff0" upstream="LA.HB.1.3.1.c1"/>
+  <project name="OnePlusOSS/android_hardware_libhardware" path="hardware/libhardware" remote="oneplus" revision="oneplus3/6.0.1"/>
   <project groups="pdk" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" revision="760e4f151e11bf26632b3aada148c773989c42af" upstream="LA.HB.1.3.1.c1"/>
   <project groups="qcom,default" name="OnePlusOSS/android_hardware_qcom_audio" path="hardware/qcom/audio" remote="oneplus" revision="oneplus3/6.0.1"/>
   <project groups="qcom" name="OnePlusOSS/android_hardware_qcom_bt" path="hardware/qcom/bt" remote="oneplus" revision="oneplus3/6.0.1"/>
@@ -346,7 +347,7 @@
   <project name="platform/packages/apps/Mms" path="packages/apps/Mms" revision="ba0c70c7d071189cef18a11b871ffc267821b492" upstream="LA.HB.1.3.1.c1"/>
   <project name="platform/packages/apps/Music" path="packages/apps/Music" revision="8e2f9262c7bbf6e5d94e752e0b6cadc46d6e0abb" upstream="LA.HB.1.3.1.c1"/>
   <project name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX" revision="8384ea12843fcf340d43ecd712ae67c945708710" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Nfc" path="packages/apps/Nfc" revision="943363fd4d21e7d6ba71c02b29fdc8565a555c65" upstream="LA.HB.1.3.1.c1"/>
+  <project name="OnePlusOSS/packages_apps_Nfc" path="packages/apps/Nfc" remote="oneplus" revision="oneplus3/6.0.1"/>
   <project name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" revision="01e429c08e51291315890de9677151a7e0b6ad35" upstream="LA.HB.1.3.1.c1"/>
   <project name="platform/packages/apps/PackageInstaller" path="packages/apps/PackageInstaller" revision="4e51e11f785a596f6c3e4d8759c2edc906bb253a" upstream="LA.HB.1.3.1.c1"/>
   <project name="platform/packages/apps/Phone" path="packages/apps/Phone" revision="79731f02b7009206a01182d2cca15dfc8491da09" upstream="LA.HB.1.3.1.c1"/>
@@ -355,7 +356,7 @@
   <project name="platform/packages/apps/Provision" path="packages/apps/Provision" revision="78ca0db658fe6253d506916e36319e620476f809" upstream="LA.HB.1.3.1.c1"/>
   <project name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" revision="3ba0f015d44a71494d10daad5a6f5b487b6b7bf5" upstream="LA.HB.1.3.1.c1"/>
   <project name="platform/packages/apps/Settings" path="packages/apps/Settings" revision="2966d300806aee135e780a8f830f8f3aa58accc6" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/SmartCardService" path="packages/apps/SmartCardService" revision="29eae320a4bd222b5ff1c092f84f1aebba88d0b7" upstream="LA.HB.1.3.1.c1"/>
+  <project name="OnePlusOSS/packages_apps_SmartCardService" path="packages/apps/SmartCardService" remote="oneplus" revision="oneplus3/6.0.1"/>
   <project name="platform/packages/apps/SnapdragonCamera" path="packages/apps/SnapdragonCamera" revision="720d7a8d8b3dfec14586bc2b205c367b79b24714" upstream="LA.HB.1.3.1.c1"/>
   <project name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" revision="9c7f28027a8590147c1cc7cc69e84517c27e5f52" upstream="LA.HB.1.3.1.c1"/>
   <project name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" revision="4db997871e3f4c3f84660815096e5276b47c5c91" upstream="LA.HB.1.3.1.c1"/>
