@@ -96,7 +96,7 @@
   <project groups="pdk-cw-fs" name="platform/external/embunit" path="external/embunit" revision="336b7c65098af0d1be69f2db55f4e75342d73b3f" upstream="LA.HB.1.3.1.c1"/>
   <project groups="pdk-cw-fs" name="platform/external/emma" path="external/emma" revision="0daf3e00b0c58391e1a58ceeeb20fbde8dd2f95a" upstream="LA.HB.1.3.1.c1"/>
   <project groups="pdk-cw-fs" name="platform/external/esd" path="external/esd" revision="943c42b6f8e9afe821744aa4c039f4943ebf29f5" upstream="LA.HB.1.3.1.c1"/>
-  <project name="OnePlusOSS/external_libese-spi" path="external/libese-spi" remote="oneplus" revision="oneplus3/6.0.1">
+  <project name="OnePlusOSS/external_libese-spi" path="external/libese-spi" remote="oneplus" revision="oneplus3/6.0.1"/>
   <project groups="pdk" name="platform/external/expat" path="external/expat" revision="e5aa0a2cb0a5f759ef31c0819dc67d9b14246a4a" upstream="LA.HB.1.3.1.c1"/>
   <project groups="pdk-cw-fs" name="platform/external/eyes-free" path="external/eyes-free" revision="16bd4c7a4d1bfe229068b637614dad7c48dd2ceb" upstream="LA.HB.1.3.1.c1"/>
   <project groups="pdk" name="platform/external/f2fs-tools" path="external/f2fs-tools" revision="3686eecd8c8511ae7ecd7611a2f065b48b484b13" upstream="LA.HB.1.3.1.c1"/>
