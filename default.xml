@@ -193,7 +193,7 @@
   <project groups="pdk-cw-fs" name="platform/external/messageformat" path="external/messageformat" revision="a88391404bcb7f994675db3e508697cf96dbaf23" upstream="LA.HB.1.3.1.c1"/>
   <project groups="pdk" name="platform/external/mksh" path="external/mksh" revision="c87de5d0279a299eec916effc751961347ff5eeb" upstream="LA.HB.1.3.1.c1"/>
   <project name="platform/external/mm-dash" path="external/mm-dash" revision="631615e4c7092252dacb1ba3996d9b83314302ca" upstream="LA.HB.1.3.1.c1"/>
-  <project name="OnePlusOSS/external_libp61-jcop-kit" path="MSM8996/android/external/p61-jcop-kit" remote="oneplus" revision="oneplus3/6.0.1"/>
+  <project name="OnePlusOSS/external_libp61-jcop-kit" path="external/p61-jcop-kit" remote="oneplus" revision="oneplus3/6.0.1"/>
   <project groups="pdk-cw-fs" name="platform/external/mobicore" path="external/mobicore" revision="0ec1dc7accad13a32adb7ffd75171d5e381a441d" upstream="LA.HB.1.3.1.c1"/>
   <project name="platform/external/mockftpserver" path="external/mockftpserver" revision="00dc7bdcf1df9e86789d963984dfc6912a8854c6" upstream="LA.HB.1.3.1.c1"/>
   <project groups="pdk-cw-fs" name="platform/external/mockito" path="external/mockito" revision="c7d7be3cdbefd99229903414cf71308f47973aa5" upstream="LA.HB.1.3.1.c1"/>
