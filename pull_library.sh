@@ -77,6 +77,7 @@ vendor/lib/qcdrm/playready/lib/drm
 vendor/lib/qcdrm/playready/lib/mediadrm
 vendor/lib/rfsa/adsp
 vendor/lib/soundfx
+sbin
 "
 
 for i in ${list}
@@ -1630,5 +1631,12 @@ do
   adb pull /system/tts/${i} ${PREBUILT_PATH}tts/${i}
 done
 
+sbin_list="
+dashd
+"
 
+for i in ${sbin_list}
+do
+  adb pull /sbin/${i} ${PREBUILT_PATH}sbin/${i}
+done
 
