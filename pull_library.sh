@@ -625,7 +625,6 @@ libqti_performance.so
 libstagefright_soft_flacdec.so
 libvpplibrary.so
 modules/core_ctl.ko
-modules/qca_cld/qca_cld_wlan.ko
 modules/mmc_test.ko
 modules/br_netfilter.ko
 modules/ansi_cprng.ko
