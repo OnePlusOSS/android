@@ -431,11 +431,11 @@
   <project groups="pdk" name="OnePlusOSS/android_system_core" path="system/core" remote="oneplus" revision="oneplus3T/6.0.1"/>
   <project groups="pdk" name="platform/system/extras" path="system/extras" revision="93268f451542c9c4afdd9d420d6b004f6f7fcae5" upstream="LA.HB.1.3.1"/>
   <project groups="pdk" name="platform/system/gatekeeper" path="system/gatekeeper" revision="a0e3f38b2dfd1d21794b0c8eaec0f541a817860c" upstream="LA.HB.1.3.1"/>
-  <project groups="pdk" name="OnePlusOSS/android_system_keymaster" path="system/keymaster" remote="oneplus" revision="oneplus3T/6.0.1"/>
+  <project groups="pdk" name="platform/system/keymaster" path="system/keymaster" revision="797e6dfe0454b146e91c0fc1bcdca66783e75ca7" upstream="LA.HB.1.3.1"/>
   <project groups="pdk" name="platform/system/media" path="system/media" revision="a9f9f747cfa2a5de78bef2606335fe3cf4299b92" upstream="LA.HB.1.3.1"/>
   <project groups="pdk" name="platform/system/netd" path="system/netd" revision="5ff7885be8b27f692d1774eaa058dd289f642ec6" upstream="LA.HB.1.3.1"/>
   <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" revision="45751cb4bb0dd18fb5ff0ee794b51d922b65e72f" upstream="LA.HB.1.3.1"/>
-  <project groups="pdk" name="OnePlusOSS/android_system_security" path="system/security" remote="oneplus" revision="oneplus3T/6.0.1"/>
+  <project groups="pdk" name="platform/system/security" path="system/security" revision="8fe6ab6a41707a41a4faa2dedfb073f4fb3d4904" upstream="LA.HB.1.3.1"/>
   <project groups="pdk" name="platform/system/vold" path="system/vold" revision="836164e738cd60243f44be587103cb7d60648d9b" upstream="LA.HB.1.3.1"/>
   <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/external/libnfc-nci" revision="8678cf01e83d326f536ae7096628f382200ef8cc" upstream="LA.HB.1.3.2"/>
   <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/frameworks" revision="c9103111279e98fe6a4b29e2aa0e339b403a17dd" upstream="LA.HB.1.3.1"/>
