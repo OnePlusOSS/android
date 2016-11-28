@@ -666,6 +666,7 @@ lib/libactuator_rohm_bu63165gwl.so
 lib/libadiertac.so
 lib/libadm.so
 lib/libadpcmdec.so
+lib/libchromatix_imx298_common_clearshot.so
 lib/libadreno_utils.so
 lib/libadsp_default_listener.so
 lib/libadsp_hvx_callback_skel.so
@@ -1544,5 +1545,5 @@ antradio_app
 
 for i in ${xbin_list}
 do
-  adb pull /xbin/${i} ${PREBUILT_PATH}xbin/${i}
+  adb pull /system/xbin/${i} ${PREBUILT_PATH}xbin/${i}
 done
