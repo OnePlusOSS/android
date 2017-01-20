@@ -1,3 +1,8 @@
+Attention
+===
+Oneplus 3 and Oneplus 3T are shared with the common base code in Github, the only difference are binaries,
+so please, DO NOT integrate Oneplus 3T's binaries into Oneplus 3. vice versa, Otherwise, your device will go to black screen...
+
 Downloading the Source  
 ===
 1. Repo sync all code with default.xml  
