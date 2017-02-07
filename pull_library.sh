@@ -501,12 +501,15 @@ do
 done
 
 lib_list="
+libmmcamera_interface.so
+libmmjpeg_interface.so
 libgnsspps.so
 libparam.so
 hw/fingerprint.msm8996.so
 hw/gps.default.so
 hw/nfc_nci.pn54x.default.so
 hw/sensors.msm8996.so
+hw/camera.msm8996.so
 libassd.so
 libassert_tip_service.so
 libaudiotest_jni.so
