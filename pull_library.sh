@@ -501,6 +501,7 @@ do
 done
 
 lib_list="
+libqomx_core.so
 libmmcamera_interface.so
 libmmjpeg_interface.so
 libgnsspps.so
