@@ -3,10 +3,14 @@ Attention
 Oneplus 3 and Oneplus 3T are shared with the common base code in Github, the only difference are binaries,
 so please, DO NOT integrate Oneplus 3T's binaries into Oneplus 3. vice versa, Otherwise, your device will go to black screen...
 
+camera recording notice:
+Please set ro.product.device in /system/build.prop to OnePlus3 or
+OnePlus3T with your special device.
+
 Downloading the Source  
 ===
 1. Repo sync all code with default.xml  
-`repo init -u git://github.com/OnePlusOSS/android.git -b oneplus/QC8996_N`  
+`repo init -u git://github.com/OnePlusOSS/android.git -b oneplus/QC8996_N_7.1`
 `repo sync`  
 2. Root your device  
 3. Pull the necessary libraries from your device by executing the script `pull_library.sh`  
@@ -20,8 +24,8 @@ Initialize the environment with the envsetup.sh script.  git a
 **[Choose a Target]**  
 Choose which target to build with lunch.  
 `$ lunch`  
-      enter **25** for msm8996-userdebug  
-      enter **26** for msm8996-user  
+      enter **22** for msm8996-userdebug
+
 **[Build the code]**  
 Build everything with make. GNU make can handle parallel tasks with a -jN argument.  
 `$ make -j4`  
