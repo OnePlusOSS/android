@@ -495,7 +495,7 @@
   <project groups="tools" name="platform/tools/external/gradle" path="tools/external/gradle" revision="fdb39a1f8fb94cf6fdd22f43bd31c9cec01f1832" upstream="android-external.lnx.2.0.r13-rel"/>
   <project groups="pdk" name="platform/tools/test/connectivity" path="tools/test/connectivity" revision="cb9bd6226d0db8f723935adfa623a6c0415cc563" upstream="android-framework.lnx.2.0.r13-rel"/>
   <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/telephony" revision="d91f5acaef09ab1dbdb0f8d67e66515547a2f2f4" upstream="atel.lnx.2.0.r13-rel"/>
-  <project name="OnePlusOSS/android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="oneplus" revision="oneplus/QC8996_N_7.1"/>
+  <project name="OnePlusOSS/android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="oneplus" revision="oneplus/QC8998_N_7.1"/>
   <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" revision="bdd671ad5f1acaa0dcc5027e0c9b8a0acb9000a8" upstream="data.lnx.2.0.r13-rel"/>
   <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" revision="2e7f384b4571a4f85480ac540c4cb403ee0188cb" upstream="data.lnx.2.0.r13-rel"/>
   <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" revision="e17a0e7f08d03ee49769f810a032bafaaf5311b3" upstream="data.lnx.2.0.r13-rel"/>
