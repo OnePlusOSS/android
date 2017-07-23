@@ -3,7 +3,7 @@ Attention
 Downloading the Source  
 ===
 1. Repo sync all code with default.xml  
-        `repo init -u git://github.com/OnePlusOSS/android.git -b oneplus/QC8998_N_7.1`
+        `repo init -u git://github.com/OnePlusOSS/android.git -b oneplus/QC8998_N_7.1 --depth=1`
         `repo sync`
 2. Root your device  
 3. Pull the necessary libraries from your device by executing the script `pull_library.sh`  
