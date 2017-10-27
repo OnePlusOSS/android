@@ -1,462 +1,590 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="git://codeaurora.org/" name="caf" review="codeaurora.org"/>
-  <default remote="caf" revision="LA.HB.1.3.1.c1"/>
+  <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
+  <default remote="caf" revision="LA.UM.6.5.r1"/>
   <remote fetch=".." name="oneplus" />
-
-  <project groups="pdk-cw-fs" name="device/common" revision="59222307bea10506e1f4814bf6687fb4cdcddabe" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="device/generic/arm64" revision="39249053f37b7f9633eb406af3dbedfea7bf8b3e" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="device/generic/armv7-a-neon" revision="0e7af778b59c0ff590e21fcce8cfc9176dc0d13d" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="device/generic/common" revision="11c092a6cbfcf6207f07a9a8e3398e747e7f5461" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="device/generic/goldfish" revision="540fcc6e39eaf422fe4a3d4fe66035a091231b51" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="device/generic/mini-emulator-arm64" revision="4f30226980039087b0d14de2c4dd0a1f37b9fd95" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="device/generic/mini-emulator-armv7-a-neon" revision="f41c1e4e10574399c6798d286c22d03471217691" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="device/generic/mini-emulator-mips" revision="3fdb24de40ca27da9a86f10f31314f2a13259db5" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="device/generic/mini-emulator-x86" revision="65d59e2be2cfd713513a05d80a0f75794ab60579" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="device/generic/mini-emulator-x86_64" revision="673aae8bd65d9708821c4062f6a0364a859e7ae4" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="device/generic/mips" revision="bf07c7522e80eef53a58a49e5d05b8913d00d1a6" upstream="LA.HB.1.3.1.c1"/>
-  <project name="device/generic/qemu" revision="45e5d38b80bfd4e13e078d1350f793f923b39136" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="device/generic/x86" revision="81ce753ec0014fe404c4eec3ac6d04504356a638" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="device/generic/x86_64" revision="138339be1da9b0f34befe3751b0bae874d7253db" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="device" name="device/google/accessory/arduino" revision="abc5159a3ca9dbb5c7e364a1eab99901a4440ac5" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="device/google/accessory/demokit" revision="7dfe7f89a3b174709c773fe319531006e46440d9" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="device,fugu,pdk-fs" name="device/google/atv" revision="bc66e3f0b5c2274c5016bcf038e2c4a57472786a" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="device,hammerhead,pdk-fs" name="device/lge/hammerhead" revision="8bf0850b6edbb767dcff58cd8b09f54dd83a4596" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="device,hammerhead,pdk-fs" name="device/lge/hammerhead-kernel" revision="4bc1b01f6890b3d46a74a7f0c1f38c4ebb2de192" upstream="LA.HB.1.3.1.c1"/>
-  <project name="OnePlusOSS/android_device_qcom_common" path="device/qcom/common" remote="oneplus" revision="oneplus3/6.0.1">
+  
+  <project name="device/common" revision="699af187e87bab62db3e8c5189a7fb407da4a0eb" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="device/generic/arm64" revision="392eec3cb4c64721cd5b76fa36535954b5d45309" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="device/generic/armv7-a-neon" revision="a438913160c744d266326f82f25f0a1304221fd0" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="device/generic/car" revision="1a9d75261fea63578a0fb808b691a0b92e1c1e05" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="device/generic/common" revision="d9ab79dbd8d80d564cd8df34ba0a0586773e0fda" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="device/generic/goldfish" revision="8d3ede72434e101d1cd0aa906682f49755dcec8e" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="device/generic/goldfish-opengl" revision="e7f983699ca5bf6882e11d360a60bd538f9fcaf3" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="device/generic/mini-emulator-arm64" revision="f185dff7711851c10decec03b2770b64cfb55e5d" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="device/generic/mini-emulator-armv7-a-neon" revision="258706fc0ddcf2c9be48967f4766ec90efb736a5" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="device/generic/mini-emulator-x86" revision="65d59e2be2cfd713513a05d80a0f75794ab60579" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="device/generic/mini-emulator-x86_64" revision="d57c0a07e17a7e1cb9067681716bfdcdecdf22e7" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="device/generic/qemu" revision="97ef4f962aec451b00bfe562c1cb67471c4563d9" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="device/generic/x86" revision="6d4527312735e4edae6e2d10b8087a935fee8be6" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="device/generic/x86_64" revision="734d9d725e200acf7dcb779896955299b86ebb86" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="device/google/accessory/arduino" revision="abc5159a3ca9dbb5c7e364a1eab99901a4440ac5" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="device/google/accessory/demokit" revision="7dfe7f89a3b174709c773fe319531006e46440d9" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="device/google/atv" revision="ef5f4f70a9c7af414d5c69d69561a0852bfb69fa" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="device/google/contexthub" revision="9fd46b3f7155d15d69cefbe052d927b0b71cd76e" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="device/google/vrservices" revision="bd77aef63c09cbcb0024c13df414360920fd75a1" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="OnePlusOSS/android_device_qcom_common" path="device/qcom/common" remote="oneplus" revision="oneplus/QC8996_O_8.0">
     <copyfile dest="build.sh" src="build.sh"/>
     <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
-  <project name="OnePlusOSS/android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="oneplus" revision="oneplus3/6.0.1"/>
-  <project groups="pdk" name="device/sample" revision="b832bcf8727d87f2f9bddaed9e500865891c2d86" upstream="LA.HB.1.3.1.c1"/>
-  <project name="kernel/lk" path="bootable/bootloader/lk" revision="e66f6203df16cd8e95ba913895da5b226f2e1606" upstream="LA.HB.1.3.1.c1"/>
-  <project name="OnePlusOSS/android_kernel_oneplus_msm8996" path="kernel" remote="oneplus" revision="oneplus3/6.0.1"/>
-  <project groups="pdk" name="platform/abi/cpp" path="abi/cpp" revision="36b381298a4efb7c293d394d8b1acbda68230989" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="OnePlusOSS/android_art" path="art" remote="oneplus" revision="oneplus3/6.0.1"/>
-  <project groups="pdk" name="platform/bionic" path="bionic" revision="a11a40cec3c1768731547563d7726e53ea908878" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="7b75b2202a15e6d11086a17481a0513205e6ad38" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="OnePlusOSS/android_build" path="build" remote="oneplus" revision="oneplus3/6.0.1">
+  <project name="OnePlusOSS/android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
+  <project name="device/sample" revision="8b55985d7f110c5639b0917dc71cbf58aacf8c24" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="kernel/lk" path="bootable/bootloader/lk" revision="c10fbc27469f767ae742f35a042510c8eed6351b" upstream="refs/heads/lk.lnx.1.9.r3-rel"/>
+  <project name="OnePlusOSS/android_kernel_oneplus_msm8996" path="kernel" remote="oneplus" revision="oneplus/QC8996_O_8.0.0_Beta"/>
+  <project name="platform/art" path="art" revision="2bfecc6e85c073ca29d8080597a4e83f0657ccd5" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/bionic" path="bionic" revision="e92e26af9731f3d14ced5652e790ac5f1d0bfffe" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/bootable/recovery" path="bootable/recovery" revision="890818439878a0f02b53f6fe04a4cd698b52f8ec" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="OnePlusOSS/android_build" path="build/make" remote="oneplus" revision="oneplus/QC8996_O_8.0">
     <copyfile dest="Makefile" src="core/root.mk"/>
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
+    <linkfile dest="build/core" src="core"/>
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
+    <linkfile dest="build/target" src="target"/>
+    <linkfile dest="build/tools" src="tools"/>
   </project>
-  <project groups="cts,pdk-cw-fs" name="platform/cts" path="cts" revision="8ce9adfc4ff229a2290dc3fe209f552ec7b2183b" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/dalvik" path="dalvik" revision="236ee628716eef0df1ef89781942abae2bc7fd7c" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/developers/build" path="developers/build" revision="2bea00f1363ed1476e51be6c4df5c43e2b0ba092" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/developers/demos" path="developers/demos" revision="95d49d216223e3431647abd79f5e376958353c95" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/developers/docs" path="developers/docs" revision="c0b835ddd9acc27176dc9a0f7d1aa2faf5d51806" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/developers/samples/android" path="developers/samples/android" revision="2ee4754fee7b48fc78a385ef27e11ebc96d9b130" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/development" path="development" revision="fb595fff96e2acf83b2b1d49b19431bf5c0c6cde" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/docs/source.android.com" path="docs/source.android.com" revision="c147c751b453b7e11860fc89f97ed0e9c77955d1" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/aac" path="external/aac" revision="96b08a5b2c0b8ad263070359a05f783c066a925c" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/android-clat" path="external/android-clat" revision="7d40a2b5e71d2057a1da380856faf046135a77cf" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/android-mock" path="external/android-mock" revision="c58b924d136b6d7e57d0b29636eb9ad87abbde0f" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/androidplot" path="external/androidplot" revision="c66727ebf001607cee14521c35bc852b55fd9845" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/ant-glob" path="external/ant-glob" revision="0f189400fd2a36bf11bfb058e7f3917eb7ed163a" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/ant-wireless/ant_native" path="external/ant-wireless/ant_native" revision="09c395782670329d4c56051d6b8cb24de7d3a41b" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/ant-wireless/ant_service" path="external/ant-wireless/ant_service" revision="d1cd68eca1bbcfe523b365edc9808fe79cc20c90" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/antlr" path="external/antlr" revision="47997265eeb7d954a32ece693bbe6dab740872dd" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/apache-commons-math" path="external/apache-commons-math" revision="dee0849a9704d532af0b550146cbafbaa6ee1d19" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/apache-harmony" path="external/apache-harmony" revision="c4604eeb958de631e6cabf6e582baf2b7cee2424" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/apache-http" path="external/apache-http" revision="d7c397dae31f6f2c78427de1fbb8160b9ed4273e" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/apache-xml" path="external/apache-xml" revision="0b013a482e4f4de9add850e34dbe5119fc390596" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/bison" path="external/bison" revision="c2418b886165add7f5a31fc5609f0ce2d004a90e" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/blktrace" path="external/blktrace" revision="d345431f16b8f76f30a58193ff2b26d5853e1109" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/boringssl" path="external/boringssl" revision="e81ac87eacb68e81e6539bf6260ee18433be4723" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/bouncycastle" path="external/bouncycastle" revision="9bdddd5e21ff16c93311b81dbcc6d69747ffebaf" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/brctl" path="external/brctl" revision="85130b403dea07b2230efed3287236fa0caefb1c" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/bsdiff" path="external/bsdiff" revision="9d4448afbbbe00353ea05f3be091535885e2e155" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/bzip2" path="external/bzip2" revision="707c3f0f5be01253da553f1449a476bd15240c2e" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/cblas" path="external/cblas" revision="0ab3e6274f109964d912c83ecd6abe6a3bf926c6" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/ceres-solver" path="external/ceres-solver" revision="f7df5f6e4d77fa02a0b31bdfa1badaf678db9df6" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/chromium-libpac" path="external/chromium-libpac" revision="c1e2d09f531717e7d0e853a6ea34ac605279ca83" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/chromium-trace" path="external/chromium-trace" revision="cab6b833449e5ca19711f7611d3657b4d3f0fb5b" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/chromium-webview" path="external/chromium-webview" revision="e906296373fc6a2dd77701e6c89bb443f2bc7a0b" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/clang" path="external/clang" revision="6270ca65199882c73aa9699d8fbeb580870e8d30" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/cmockery" path="external/cmockery" revision="77b7379c087dd5e6383aa502e36428adcdd46aab" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/compiler-rt" path="external/compiler-rt" revision="fbe7425200e8dbba4df00f9146ed920fe4103048" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/conscrypt" path="external/conscrypt" revision="4873f085ba2ae5e8305b881ef33b7570a14ad83a" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/crcalc" path="external/crcalc" revision="9666c57ab247046b716e9c1e56f0dcc7d4a1545f" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/curl" path="external/curl" revision="1e63af5a4f8b28fe02d3ebcc0fa5e9099d4a334a" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/deqp" path="external/deqp" revision="248ea86eaff951807fe74076b0881ee3f97c88b2" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/dexmaker" path="external/dexmaker" revision="fec7276299b950a8831ead9a9756d27e0fc60560" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/dhcpcd" path="external/dhcpcd" revision="a38d6f2b74d5953b3d7726415aef907eb3cde1f9" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/dnsmasq" path="external/dnsmasq" revision="c92f8a1a2ae9879e070ecc84949da23b60d62831" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/doclava" path="external/doclava" revision="a65f823d8aa3ead09af87308c7918ce3d834d699" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/donuts" path="external/donuts" revision="005389fb31a67841b5de42f0d25fbfab843e208c" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="drm_gralloc" name="platform/external/drm_gralloc" path="external/drm_gralloc" revision="47e7aba999eeca7b2db97ca388bc9c42524eec8e" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="drm_hwcomposer" name="platform/external/drm_hwcomposer" path="external/drm_hwcomposer" revision="52914a2908084c54e6aedeb0d066d617d8a5d683" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/droiddriver" path="external/droiddriver" revision="72a40802f8e7d24a3175e09adc4b44a89df54f38" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/e2fsprogs" path="external/e2fsprogs" revision="a0f552e60fa422ff7ab1d66a87927958aec7b23b" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/e2fsprogs_custom" path="external/e2fsprogs_blocks" revision="03509c9e2cd077802c72ce10a71955ad0aec174e" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/easymock" path="external/easymock" revision="bb9f1a648bd829540d7be08432e8f3142a076f64" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/ebtables" path="external/ebtables" revision="b070104dcb72b99825d645e9e41a5362bd4ff735" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/eclipse-basebuilder" path="external/eclipse-basebuilder" revision="076f46888ed346775b8efc564d7694063ef5eea7" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/eclipse-windowbuilder" path="external/eclipse-windowbuilder" revision="a5f3ee137e94737538ec3bdf9b3716765d178c17" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/eigen" path="external/eigen" revision="1ba7f856248f3d72a4549722b6c80dd6fde4abf5" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/elfutils" path="external/elfutils" revision="a963009a0b9d502ffe81e79c7c3b45b3cf58b044" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/embunit" path="external/embunit" revision="336b7c65098af0d1be69f2db55f4e75342d73b3f" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/emma" path="external/emma" revision="0daf3e00b0c58391e1a58ceeeb20fbde8dd2f95a" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/esd" path="external/esd" revision="943c42b6f8e9afe821744aa4c039f4943ebf29f5" upstream="LA.HB.1.3.1.c1"/>
-  <project name="OnePlusOSS/external_libese-spi" path="external/libese-spi" remote="oneplus" revision="oneplus3/6.0.1"/>
-  <project groups="pdk" name="platform/external/expat" path="external/expat" revision="e5aa0a2cb0a5f759ef31c0819dc67d9b14246a4a" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/eyes-free" path="external/eyes-free" revision="16bd4c7a4d1bfe229068b637614dad7c48dd2ceb" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/f2fs-tools" path="external/f2fs-tools" revision="3686eecd8c8511ae7ecd7611a2f065b48b484b13" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/fdlibm" path="external/fdlibm" revision="a80590655471025cfdbbd1328afc3ae5e6feab6a" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/fio" path="external/fio" revision="b9da4221fd8a628a696d70c33ba1e7e8cc00a8fe" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/flac" path="external/flac" revision="7f3e97cdeb3b90deac4c05790e4047f18dba14f8" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/fonttools" path="external/fonttools" revision="fe6c510afddcf7f5d980b49e4398dc31953b43d3" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/freetype" path="external/freetype" revision="ec62c527eb34ee4481a0153ceb42dfd35d7e1d26" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/fsck_msdos" path="external/fsck_msdos" revision="17a1471db8c528cd9d44ec4385d2eb3614138856" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,qcom_msm8x26" name="platform/external/giflib" path="external/giflib" revision="9b8f8602a74a943ddc356bb11c55b4998b2b386d" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/glide" path="external/glide" revision="ac008b7995cd6956fc466f873ee2d810779a1e9b" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="dragon" name="platform/external/google-breakpad" path="external/google-breakpad" revision="7e61ab71172b9e0d477f16a5e3b3ec32f866d1a6" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/google-fonts/carrois-gothic-sc" path="external/google-fonts/carrois-gothic-sc" revision="0062a10458d4c357f3082d66bcb129d11913aaae" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/google-fonts/coming-soon" path="external/google-fonts/coming-soon" revision="2c5cb418c690815545bbb0316eae5fd33b9fc859" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/google-fonts/cutive-mono" path="external/google-fonts/cutive-mono" revision="bce2136662854076023066602526ba299e6556b2" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/google-fonts/dancing-script" path="external/google-fonts/dancing-script" revision="7b6623bd54cee3e48ae8a4f477f616366643cc78" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/google-tv-pairing-protocol" path="external/google-tv-pairing-protocol" revision="2c2109e246e439f977e366ec78de0b147b06bb60" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/gptfdisk" path="external/gptfdisk" revision="f82c7d8f9734e9f3d7e2eedec300106c5e3618c2" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/gtest" path="external/gtest" revision="e826aa4f99cf7d9e57fe9668e299a2808674ede4" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/guava" path="external/guava" revision="5b9b416a211d8d2ac2012aaad1b77f79ffe7617c" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/hamcrest" path="external/hamcrest" revision="9fb9af468ed5e2ecba330348262dae5e04b7d006" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs,qcom_msm8x26" name="platform/external/harfbuzz_ng" path="external/harfbuzz_ng" revision="84cf81e6dcf4a816e91d457a79fb028b7296b86f" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/hyphenation-patterns" path="external/hyphenation-patterns" revision="9e7163de2eb0ced23971bceef3c14afbef6d4021" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/icu" path="external/icu" revision="e9e4cb54d57175d6ce95c8dbef884d5ed6436ede" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/iproute2" path="external/iproute2" revision="0b5eaaa97b9f807c89d518b8a6b3e02a27b34e1f" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/ipsec-tools" path="external/ipsec-tools" revision="be69e0250002f998173bedb124c56b68ab6292cd" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/iptables" path="external/iptables" revision="4a09a39e09de10d0eed46fcced1d10e96c43454e" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/iputils" path="external/iputils" revision="fdf8e83818340ee2efa54654fb294da919d1a4b1" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/jack" path="external/jack" revision="5ceb2025ac5d25ed48183ac2d3dac4691fe761fb" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/jarjar" path="external/jarjar" revision="41c2bca43edfc197c3c67619115b9a70d9227008" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/javasqlite" path="external/javasqlite" revision="1a0103df03484c022003b17e320746db3473ccd2" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/javassist" path="external/javassist" revision="9566207cff5871c672fac1f0d4332d93292036d7" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/jdiff" path="external/jdiff" revision="556ad8c577bc3abe6b4d2081c0ab48d815ae3633" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/jemalloc" path="external/jemalloc" revision="486fa41f4ace88a9d1b96831bc36cbd2cfa4957e" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/jetty" path="external/jetty" revision="03928aee4356845252ac6b662d5c72c29903813e" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/jhead" path="external/jhead" revision="5c8f937269957e6651383e988006824781fd021a" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/jmdns" path="external/jmdns" revision="f4eb7466d5c09098f9dc54137ed3235e3c43fc9f" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/jmonkeyengine" path="external/jmonkeyengine" revision="a6b44658eb1c55295f132a36233a11aa2bd8f9cf" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/jpeg" path="external/jpeg" revision="9f3436c3b153b55257caca0345c8135514b26945" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/jsilver" path="external/jsilver" revision="b37fdc8f180ef5a79342b8a1d6698f1dce75aa39" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/jsmn" path="external/jsmn" revision="27b5a35db0630b86791fa037a12da7b37c2aab49" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/json-c" path="external/json-c" revision="6f9c02d6b1437f5203f866805c8f602476b3cc4e" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/jsoncpp" path="external/jsoncpp" revision="bc9a1127157bc00c01a1e106e98e7cd24c41f780" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/jsr305" path="external/jsr305" revision="ed2d3938efee97e6316b849759dc913cbc831f95" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/junit" path="external/junit" revision="7e5a2e79b848a8c0373d65f2324f5f999a458518" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/kernel-headers" path="external/kernel-headers" revision="d5a1ad2bdf2607752b3841681a01db403f8b4aa1" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/ksoap2" path="external/ksoap2" revision="f13853ff0fa5eb65afc847176e55ca6db293eb3c" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/libavc" path="external/libavc" revision="b15b18c50062a2f4a535a8511f640dc38535e7e2" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/libcap-ng" path="external/libcap-ng" revision="52447887e50b49f33f959077c31232edff6659d8" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/libcxx" path="external/libcxx" revision="076df933eb2d98152218b874abfa91cba660bcbd" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/libcxxabi" path="external/libcxxabi" revision="b451069aab57ccfe64c0fc7a18cfc487862fe985" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/libdrm" path="external/libdrm" revision="d021eea3b7745aef39ba40ae52b88ed120db4b5e" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/libedit" path="external/libedit" revision="315dded283ebd8627b4968d761b0c29bc241d7a3" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/libexif" path="external/libexif" revision="fa0c1e7d954230cd29d896e6015314b2f68ad7bd" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/libgsm" path="external/libgsm" revision="1e26679795597459732408891bedea130b3ee1f1" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/libhevc" path="external/libhevc" revision="912027d08fbce3cbc9444194ac11a023d5c9694c" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/liblzf" path="external/liblzf" revision="6946aa575b0949d045722794850896099d937cbb" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/libmpeg2" path="external/libmpeg2" revision="0ba16e0057a6fa4b4022d0e77e8186d551434f0d" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/libmtp" path="external/libmtp" revision="e204c41bf49cadc1de460f0cf902008955b356d9" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/libnetfilter_conntrack" path="external/libnetfilter_conntrack" revision="243985eafc89e86eb8e2d8574e4ab57f5b14b83a" upstream="LA.HB.1.3.1.c1"/>
-  <project name="OnePlusOSS/external_libnfc-nci" path="external/libnfc-nci" remote="oneplus" revision="oneplus3/6.0.1"/>
-  <project groups="pdk" name="platform/external/libnfc-nxp" path="external/libnfc-nxp" revision="76f8fa7177767cb377f9212e207e3ac16f9b8d48" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/libnfnetlink" path="external/libnfnetlink" revision="80ba60f6a117f73fb4497615511dac44870eacdb" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/libnl" path="external/libnl" revision="19c48c82efd448e310e8151af749c5f6ec5d321b" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/libogg" path="external/libogg" revision="e4375ffe5491c4742bec47ae5468a9df5ffc3528" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/libopus" path="external/libopus" revision="1391dbf0ccd121ce7a49d30e2142d36c8d404990" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,pdk-cw-fs" name="platform/external/libpcap" path="external/libpcap" revision="c442bf68e06f961ad0f8fc5a7d19e0984985ea30" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/libphonenumber" path="external/libphonenumber" revision="52e2840e86facf8cd64e032fb1d8c70d071f653a" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/libpng" path="external/libpng" revision="79ba575809c2dd1bddbf1bb363ab22da0df8a5a7" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/libseccomp-helper" path="external/libseccomp-helper" revision="e87019943a8b5a7cd0880910f671c37b240d5754" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/libselinux" path="external/libselinux" revision="943ed44a46ed95d557bf552b57fe61280a77489c" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/libssh2" path="external/libssh2" revision="2bb40f2445cab3ba588efb29e1835cdba2b27248" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/libunwind" path="external/libunwind" revision="72f753e78a80361db613ae4f743a6888391fae35" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/libusb" path="external/libusb" revision="3a36cef7ef847d3839090a7c98eb961a602af55b" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/libusb-compat" path="external/libusb-compat" revision="6d4ab8939e4784b2b6eb63d992cc4d44f953bb41" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/libutf" path="external/libutf" revision="7469493bff47a84a6041cba80df50bbbe08cd656" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/libvncserver" path="external/libvncserver" revision="54fc82147d8ea715bf2864246453d325bf546608" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/libvorbis" path="external/libvorbis" revision="61a5b54ff699f0cd339121c14432d0d2517907b1" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/libvpx" path="external/libvpx" revision="b6919dc5bef6217eaa664dd4085da1fe62925582" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/libvterm" path="external/libvterm" revision="6d78f36633063dad0689ca42be1ad8d0313ebfab" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/libxml2" path="external/libxml2" revision="8eadaf82488fe3c7a106bb17e335447bef5c9bec" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="libyuv,pdk-cw-fs" name="platform/external/libyuv" path="external/libyuv" revision="613f94db72ea295b8e7040f508ea0bbb782714a2" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/linux-tools-perf" path="external/linux-tools-perf" revision="1f1e9247c2356a325ed1e3af4cd05d693e707809" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/littlemock" path="external/littlemock" revision="a3ea6bf9e6fcf63b69f5635b2ecc1fbd9a9a4dfc" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/lld" path="external/lld" revision="26c9bb3b51a7ac4bc45f73d532a03cfd9982043a" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/lldb" path="external/lldb" revision="cf26fc9c6ac98ee27b605435b06795a37ed61169" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/llvm" path="external/llvm" revision="7df0ddb9601b900d99f37ca9fd61aa7c374c0993" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/ltrace" path="external/ltrace" revision="09d9b8fca15daeb8f87dbbbc6b82ad83c3495341" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/lz4" path="external/lz4" revision="49f9b96255588932ee6d0c33e4c546d7475e5898" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/lzma" path="external/lzma" revision="b473eaa2840cccf2fef15d53f00bccf92c41b615" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/marisa-trie" path="external/marisa-trie" revision="629ed059b1e85cd8e4de363d8b3dc53c15c3e08a" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/markdown" path="external/markdown" revision="6f2e3554ae38cc90518d32e02cb57d05988270a6" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/mdnsresponder" path="external/mdnsresponder" revision="6e91f2fa98745ac8faee6d26d529ccf44216a8ca" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/mesa3d" path="external/mesa3d" revision="cfa14c46594a66e3f1b6b50b65b5e9f4fa6302a5" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/messageformat" path="external/messageformat" revision="a88391404bcb7f994675db3e508697cf96dbaf23" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/mksh" path="external/mksh" revision="c87de5d0279a299eec916effc751961347ff5eeb" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/mm-dash" path="external/mm-dash" revision="631615e4c7092252dacb1ba3996d9b83314302ca" upstream="LA.HB.1.3.1.c1"/>
-  <project name="OnePlusOSS/external_libp61-jcop-kit" path="external/p61-jcop-kit" remote="oneplus" revision="oneplus3/6.0.1"/>
-  <project groups="pdk-cw-fs" name="platform/external/mobicore" path="external/mobicore" revision="0ec1dc7accad13a32adb7ffd75171d5e381a441d" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/mockftpserver" path="external/mockftpserver" revision="00dc7bdcf1df9e86789d963984dfc6912a8854c6" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/mockito" path="external/mockito" revision="c7d7be3cdbefd99229903414cf71308f47973aa5" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/mockwebserver" path="external/mockwebserver" revision="6c9ca4c4097e6f6e1296fafb8dcc5fc66a2f21cc" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/mp4parser" path="external/mp4parser" revision="16051e950485c6b62127c0446a760111de1a0cb9" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/mtpd" path="external/mtpd" revision="acfaed8bf7d1928ecb1e15b56497ba5da885101d" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/nanohttpd" path="external/nanohttpd" revision="2aa25f6af65e07f4c1ce167e2de2aaee2f0cffe8" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/nanopb-c" path="external/nanopb-c" revision="7e7f2e9122af6c7e7e7d4ba205fdf46d50b95eef" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/naver-fonts" path="external/naver-fonts" revision="db36bbeb88dcae49ce73c641dbc9034ac45943da" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/netcat" path="external/netcat" revision="b023a43765b15f0b0fd5b52b7d8021f515c59c23" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/netperf" path="external/netperf" revision="27ffe986a2933b1ff0eecbcc51a807d130e254ec" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/neven" path="external/neven" revision="b212725fe71ed9ce8d0adda92fc43030337bd48a" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/nfacct" path="external/nfacct" revision="6f7aae0264821b44e9fe80fb5596c525d3e2f475" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/nist-pkits" path="external/nist-pkits" revision="2c243d61d94b93eaef6fd5e0f727c9a2be838338" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/nist-sip" path="external/nist-sip" revision="b23dbfce7ea84c39cea75b612868a5832cb9af2b" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/noto-fonts" path="external/noto-fonts" revision="44976c2c9b8fb8469fe6ecbc97d6e4301573b931" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/oauth" path="external/oauth" revision="bc170f58de82000ed6460f111686a850a1890c07" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/objenesis" path="external/objenesis" revision="2a7655c0d503fcf5989098f65bf89eae78c32e5a" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/okhttp" path="external/okhttp" revision="2bb23fe5c59ae2ab8b1ad198cc0a4b08e1ac2687" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/opencv" path="external/opencv" revision="70a06ce5365b0248e0ad39df681d6c934d3618f3" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/openfst" path="external/openfst" revision="d329901723ef29099659d9b955c5580de686fd6d" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/openssh" path="external/openssh" revision="cfb649f16fb638fa1c8c7e4cc229ce547dfa14d6" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/owasp/sanitizer" path="external/owasp/sanitizer" revision="bbfb25464ff30c5a62dce351d719a8c533afb2a3" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/parameter-framework" path="external/parameter-framework" revision="7f346c9058f39a533a2eaadc9ebc4001397c6ff9" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/pcre" path="external/pcre" revision="0d3d4875d4e672ab52cfd421da9a7fddbbaecda3" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/pdfium" path="external/pdfium" revision="e6986e1e8d4a57987f47c215490cb080a65ee29a" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/ppp" path="external/ppp" revision="2f5a56c9492fb06c07e0b9ec014bd8029aff187d" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-java" name="platform/external/proguard" path="external/proguard" revision="ef2942809b198653e0cf181151a5f435f5bb7476" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/protobuf" path="external/protobuf" revision="2f4d8a1b744e2e62dcd68b7cb7159000e5751975" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/qrngd" path="external/qrngd" revision="58d4b12326595d220dd7dc9d432fddd9c4cf2772" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/regex-re2" path="external/regex-re2" revision="9a16eac809c3bbb746f055b38d4e0d5c4f228c73" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/replicaisland" path="external/replicaisland" revision="99e2e54c5d036048caf09bb05eea0969de093104" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/robolectric" path="external/robolectric" revision="50bb07ea6b5560705e67cbf2859a2d4d371a5995" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/roboto-fonts" path="external/roboto-fonts" revision="f5cf79102af594c746627b392b4f98eedd254571" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/safe-iop" path="external/safe-iop" revision="aa0725fb1da35e47676b6da30009322eb5ed59be" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/scrypt" path="external/scrypt" revision="72691396f9fa84fd39cb72d031750e580e648aa3" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/external/selinux" path="external/selinux" revision="d86754caec22a9331ed44d4a93ddb682e6d7a49c" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="OnePlusOSS/android_external_sepolicy" path="external/sepolicy" remote="oneplus" revision="oneplus3/6.0.1"/>
-  <project groups="pdk,qcom_msm8x26" name="platform/external/sfntly" path="external/sfntly" revision="a01a58c85ae6f0b1fe97e4a383bb7536285264d8" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,qcom_msm8x26" name="OnePlusOSS/android_external_skia" path="external/skia" remote="oneplus" revision="oneplus3/6.0.1"/>
-  <project name="platform/external/slf4j" path="external/slf4j" revision="7122d7eba20aeeaf319017b655271889f825f750" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/smali" path="external/smali" revision="15284127c9ed241f1de20fdd8cdb24cb12cd2119" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/sonic" path="external/sonic" revision="10c16fc60582d7e8bcf7533793871485d339e241" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/sonivox" path="external/sonivox" revision="5a19f5468e3c50b9b716b8b59608f46f3eb102c6" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/speex" path="external/speex" revision="ff03110e77ec7fe716c5be11783746f59c814e30" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/sqlite" path="external/sqlite" revision="2fb3da9fbbc58c78b92c00f6e5fea77f37c57faa" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/squashfs-tools" path="external/squashfs-tools" revision="1a710ff698178fbf71251395c4c96e3e7e73e2ed" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/srtp" path="external/srtp" revision="8756a774806ed44bc4e185a7a5a253f3dfbdc2e7" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/strace" path="external/strace" revision="54e2f93285e52a4347ace1f33860ce51e72853eb" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/svox" path="external/svox" revision="7498f9aafbafa48960689439f0cd69da0c1ab34f" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/tagsoup" path="external/tagsoup" revision="45e8185b55dfaee6d9cfc487708e787b5b7c3770" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,pdk-cw-fs" name="platform/external/tcpdump" path="external/tcpdump" revision="b5d6f230d44e96d2ac9cbd7f6bb2862fa88a60c4" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/timezonepicker-support" path="external/timezonepicker-support" revision="99e91a76fd74bad10266623d67cdb98d011f709e" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/tinyalsa" path="external/tinyalsa" revision="bf6999b45e923da2a0e0ba90d6f51fc961ae2263" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/tinycompress" path="external/tinycompress" revision="aeb849a2957229f99bb7868ff65bcfeece0e9d54" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/tinyxml" path="external/tinyxml" revision="143125ff631c481d590cae0d7cc9ccfaaca269c7" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/tinyxml2" path="external/tinyxml2" revision="9d9aed466bbe37c993de79de71b6afbf091f99af" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/toybox" path="external/toybox" revision="c96e42498c99b179444e6812dd8b0583f0624fcd" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/tremolo" path="external/tremolo" revision="c209811abf0645d48925d86e80a0bc5438978a4e" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/v8" path="external/v8" revision="57a14c9a8621270b0e6c697dce28a9c453ebe55f" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/valgrind" path="external/valgrind" revision="4e88b3458976a7132fe2b78392ebf9348a42a9f9" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="vboot" name="platform/external/vboot_reference" path="external/vboot_reference" revision="10ebdb2ed235c5fc70d72ba11c7e7d2caf4b3296" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/vixl" path="external/vixl" revision="dc661669ef2e2fd18c4e21333d6a12112b520436" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/vogar" path="external/vogar" revision="e40f8ded5b78b68b992938c497309b6dbcd7f462" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,qcom_msm8x26" name="platform/external/webp" path="external/webp" revision="9e80ee991168a0a6c2a906dd2c17c5e17df4566e" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/webrtc" path="external/webrtc" revision="c8deb4e7ba3190a0876236d77c19426eb6f54e4f" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" revision="e29f99cf87cc7513ea8ebe6017e739d40a396669" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/xmlwriter" path="external/xmlwriter" revision="e95d92246ee35273dde2bee8b00485cc14c12be5" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/xmp_toolkit" path="external/xmp_toolkit" revision="42ea4dc6d1fc2206a7778029070ed9213e3b0fbf" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/external/zlib" path="external/zlib" revision="a15adad27b1a33de2f4c788809ba97cff726cf58" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/zopfli" path="external/zopfli" revision="bb96afe13a50bfc17259dcf56f44e997923c705c" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/external/zxing" path="external/zxing" revision="d2256df36df8778a3743e0a71eab0cc5106b98c9" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/frameworks/av" path="frameworks/av" revision="2b77b7c5a93b7358acd05383a7b7b6a62b885fb3" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="OnePlusOSS/android_frameworks_base" path="frameworks/base" remote="oneplus" revision="oneplus3/6.0.1"/>
-  <project groups="pdk" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="b7f05114e5f408479b50647837cdf25187bfd164" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="8c10afdc806cbb9d4560e90b100f0dcefdd46a21" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="9a274aa020b2798b01875eb49fc66be649d14e11" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/data-binding" path="frameworks/data-binding" revision="16bb795fbce7e81d7a686665dc0bb1c3dbdad1ee" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/ex" path="frameworks/ex" revision="8d069cf9807027f7b3148589292f8f0544179ebf" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/mff" path="frameworks/mff" revision="b9669b8540a1e5c953374d53b115514335e23c27" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/minikin" path="frameworks/minikin" revision="7c2503d5baca89a0d6340199cbab2cf4b071c0f5" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/ml" path="frameworks/ml" revision="e0721529b9662b5ffb6cc7daf5b097720f5eb3e8" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/multidex" path="frameworks/multidex" revision="805db15e4d7baa57062ad08fb03eeac8691475c8" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/frameworks/native" path="frameworks/native" revision="f5a25e679f89ff99753725d66694cdc3d4ba8c36" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap" revision="856e2a9d72fe3a79cd7bfa5cf443d13a60495c4b" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/opt/bluetooth" path="frameworks/opt/bluetooth" revision="ee991e9ed86e90ba56e56b9e05c89012097972d4" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar" revision="03b18577f8f8f799e87a62b8e03889ddacf6daa2" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/opt/carddav" path="frameworks/opt/carddav" revision="f08aa2df132dd8dc32a0013d3750137d9dd9280a" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/opt/chips" path="frameworks/opt/chips" revision="63ea5e20cd60c8789f15ad986fe6c1b68b0da87a" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/opt/colorpicker" path="frameworks/opt/colorpicker" revision="092656988fa7ead4196a9e0f118db8a898e49091" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/opt/datetimepicker" path="frameworks/opt/datetimepicker" revision="d509a2a2b0e6b3726866b30dd975cd6b6364eeed" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/opt/emoji" path="frameworks/opt/emoji" revision="709f713ebcd62c61defc270d945810efca179621" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/frameworks/opt/inputconnectioncommon" path="frameworks/opt/inputconnectioncommon" revision="3baece9b20fa480da46d860acd7320fd9eee3386" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/opt/inputmethodcommon" path="frameworks/opt/inputmethodcommon" revision="990fcb1a6dbb5d1204cc8ec86e4bc3f691f4aeeb" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet" revision="b076d4ec6619a962566c34e99893d689d482c090" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="frameworks_ims,pdk-cw-fs" name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" revision="197156c11d0b11d8650060ba82fc80680c6b316b" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/opt/net/voip" path="frameworks/opt/net/voip" revision="66d9f88af8a099373dac1722fde40b196ba9a37a" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" revision="0bf5e39505051ae47e69ab38f81ad078d338c91e" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer" revision="255ddc81dcf7d9e967f5daae119f0af35b996e92" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard" revision="cf03ca6a7b9081effb34048b4c7d85efb5d64843" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/frameworks/opt/telephony" path="frameworks/opt/telephony" revision="d54b967c891a2b5ea821def69b88b612e6a1540c" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker" revision="6f214051d7ad69b34c0459e7bc55cdacd03c4005" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard" revision="22b057b0863763c2f4634935dd09c15e3f1e11d7" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/opt/widget" path="frameworks/opt/widget" revision="466e0e0307b3f6aa4f4be3d9419b5996bd389da5" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/frameworks/rs" path="frameworks/rs" revision="7a61fc136e58a7943b3b1bfb11307c16a336cfe2" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/support" path="frameworks/support" revision="9843a6f6ad5f586a841095b2458788cbb04adf47" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/volley" path="frameworks/volley" revision="04c1a6e545336540689b5700291fa7f521a769de" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/webview" path="frameworks/webview" revision="2b9a0f1d1725aad8384b31686081fa4e22209a51" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/frameworks/wilhelm" path="frameworks/wilhelm" revision="41bdb8b34ca24455351fc359d7de2e32b0ed06a9" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt" revision="049cf3b60ffbca72a42b796a39ebd38660450ff2" upstream="LA.HB.1.3.1.c1"/>
-  <project name="OnePlusOSS/android_hardware_libhardware" path="hardware/libhardware" remote="oneplus" revision="oneplus3/6.0.1"/>
-  <project groups="pdk" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" revision="760e4f151e11bf26632b3aada148c773989c42af" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="qcom,default" name="OnePlusOSS/android_hardware_qcom_audio" path="hardware/qcom/audio" remote="oneplus" revision="oneplus3/6.0.1"/>
-  <project groups="qcom" name="OnePlusOSS/android_hardware_qcom_bt" path="hardware/qcom/bt" remote="oneplus" revision="oneplus3/6.0.1"/>
-  <project groups="qcom,default" name="OnePlusOSS/android_hardware_qcom_camera" path="hardware/qcom/camera" remote="oneplus" revision="oneplus3/6.0.1"/>
-  <project groups="qcom,default" name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="b48cb1f7c65f4abd45af3f576c0f6d0a242d43a1" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="qcom,qcom_gps" name="platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="e66c607ebdeca279c4d1b337365d38f8437d2b51" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="qcom,default" name="OnePlusOSS/android_hardware_qcom_media" path="hardware/qcom/media" remote="oneplus" revision="oneplus3/6.0.1"/>
-  <project groups="qcom_wlan" name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="da35de8e1a3b9668ff93a33ed2647749471808a5" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="OnePlusOSS/android_hardware_ril" path="hardware/ril" remote="oneplus" revision="oneplus3/6.0.1"/>
-  <project groups="pdk" name="platform/libcore" path="libcore" revision="8d5ea4adf3cc945db7adfc1208593bca39998780" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/libnativehelper" path="libnativehelper" revision="b7a25286026b49f0f7d95b25f2d32c4f47f498ef" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/ndk" path="ndk" revision="e6403c6a048bdec5a7fc7c6c0cc149fc5f098f80" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="c41aa4fff1b9c371d84ad82fe5ffe7188041df0d" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" revision="ba7d424c809ea47cf839820438194c195cbf538b" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Calculator" path="packages/apps/Calculator" revision="3382ebba2d95082e3c0f594a8ff7833763d522c7" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Calendar" path="packages/apps/Calendar" revision="916259681ce2216d95c05a5064ed71d0b0d7f422" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Camera" path="packages/apps/Camera" revision="33c59af04ab44eff0e3806f140d472252300646a" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Camera2" path="packages/apps/Camera2" revision="03f65702848dc99f23892099882998cc25d4aed7" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig" revision="3851496fcf42c0ba53205fbcd364acae95a692e9" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" revision="a3ff3e61c7c4c64259759b8c3b05175878b6c799" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" revision="93d9345142a8d3b1f0c15c67028c592b474aa58d" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Contacts" path="packages/apps/Contacts" revision="99ed1493c17558594d4aa8c1af4133c5eb8b61cf" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/ContactsCommon" path="packages/apps/ContactsCommon" revision="48c7445e948435008418b06dfee8347d581f219b" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock" revision="bf4409260963b8ac01d4fb27481c20c647707caf" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Dialer" path="packages/apps/Dialer" revision="c0cb0473d6def34711f0622cbae6c902edaab8e6" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Email" path="packages/apps/Email" revision="3a36a243130f802ecaaa353ed24aca018a165b2a" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/ExactCalculator" path="packages/apps/ExactCalculator" revision="4439a9019b1177c53bca3d0f411c750ccc8faa0b" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Exchange" path="packages/apps/Exchange" revision="6efba867d469ef9d92c1ea53de1e7d94b47f5f7b" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/FMRadio" path="packages/apps/FMRadio" revision="36d55503dddf122792b7e0794fb60bcfe98d7b18" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Gallery" path="packages/apps/Gallery" revision="618445b9acd812b5706aafd8b30a77bd37671aec" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Gallery2" path="packages/apps/Gallery2" revision="050ed5e0663bfd9c8d3ba5a70a58395a30a382cb" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" revision="3ad9f99e685393bfa2925046f4ec070fd25bd839" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/InCallUI" path="packages/apps/InCallUI" revision="7db3891d44ca57583853a63636c6e8939c674b83" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain" revision="1eee751fa8404b2ddda55ad17802f5614c7b7e61" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Launcher2" path="packages/apps/Launcher2" revision="318f9dcd8d118e0e0231ce2e7eb8c365a1fe3491" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" revision="96ef016667d3fd0a7b18b6be1b43aa8619880a5f" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" revision="8e2f0e48cb3d2209f1cf818b6cf8c4bd95645783" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning" revision="a321325ea0848ba7d99e4884613c96c0625339a6" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Messaging" path="packages/apps/Messaging" revision="fb8b15f11c0ce9c95648e3399a83cfe8ec9cc29c" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Mms" path="packages/apps/Mms" revision="ba0c70c7d071189cef18a11b871ffc267821b492" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Music" path="packages/apps/Music" revision="8e2f9262c7bbf6e5d94e752e0b6cadc46d6e0abb" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX" revision="8384ea12843fcf340d43ecd712ae67c945708710" upstream="LA.HB.1.3.1.c1"/>
-  <project name="OnePlusOSS/packages_apps_Nfc" path="packages/apps/Nfc" remote="oneplus" revision="oneplus3/6.0.1"/>
-  <project name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" revision="01e429c08e51291315890de9677151a7e0b6ad35" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/PackageInstaller" path="packages/apps/PackageInstaller" revision="4e51e11f785a596f6c3e4d8759c2edc906bb253a" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Phone" path="packages/apps/Phone" revision="79731f02b7009206a01182d2cca15dfc8491da09" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/PhoneCommon" path="packages/apps/PhoneCommon" revision="5c1c0f09e42b122b7e13a3917a3ae2484eddfbf8" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Protips" path="packages/apps/Protips" revision="ec5d268260d97499dd45849e29e8c4f5e75dd539" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Provision" path="packages/apps/Provision" revision="78ca0db658fe6253d506916e36319e620476f809" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" revision="3ba0f015d44a71494d10daad5a6f5b487b6b7bf5" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Settings" path="packages/apps/Settings" revision="2966d300806aee135e780a8f830f8f3aa58accc6" upstream="LA.HB.1.3.1.c1"/>
-  <project name="OnePlusOSS/packages_apps_SmartCardService" path="packages/apps/SmartCardService" remote="oneplus" revision="oneplus3/6.0.1"/>
-  <project name="platform/packages/apps/SnapdragonCamera" path="packages/apps/SnapdragonCamera" revision="720d7a8d8b3dfec14586bc2b205c367b79b24714" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" revision="9c7f28027a8590147c1cc7cc69e84517c27e5f52" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" revision="4db997871e3f4c3f84660815096e5276b47c5c91" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/SpeechRecorder" path="packages/apps/SpeechRecorder" revision="725f4c8c46d74bae6795f1b0ddd5fd459e06b6f4" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Stk" path="packages/apps/Stk" revision="9eecd481d7ff3e531db49cb42080e149a14be96c" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Tag" path="packages/apps/Tag" revision="92f9220846843c41caf986bb56f67a7d5ed3c997" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/Terminal" path="packages/apps/Terminal" revision="5b68e8ad082625206492ca9baf889f8c5427eb01" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/TvSettings" path="packages/apps/TvSettings" revision="60125ac6f1f92747737f708785a1e093ac281ae4" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/apps/UnifiedEmail" path="packages/apps/UnifiedEmail" revision="c47e95333f0cb96395d892808453ffa91779167f" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/experimental" path="packages/experimental" revision="7b02b6bbaf0b4330ac05fda8cd47f4044ee2740a" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME" revision="69460095824352ab4c480ec823a67da7ce711dee" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/inputmethods/OpenWnn" path="packages/inputmethods/OpenWnn" revision="59aefa242169b7a51c2381daee58ff22fd1834ce" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/providers/ApplicationsProvider" path="packages/providers/ApplicationsProvider" revision="33d26f5eedb3d3011762ce5b2de66e931bf64b35" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/providers/BookmarkProvider" path="packages/providers/BookmarkProvider" revision="efad8f77f7710c52c95a38c6884fccbaa5f726be" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/packages/providers/CalendarProvider" path="packages/providers/CalendarProvider" revision="51fb9409c5034d81b48879555ad8a3dbb35342d6" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/providers/CallLogProvider" path="packages/providers/CallLogProvider" revision="6f3b34eb071990498f7523e7feccc19f542a8c45" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/packages/providers/ContactsProvider" path="packages/providers/ContactsProvider" revision="e923728c2ab99caa3215acbf28f36ab4cf2bb6e9" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/packages/providers/DownloadProvider" path="packages/providers/DownloadProvider" revision="eb99767090bdf986b2717c5aa3efb6c945ad915e" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/packages/providers/MediaProvider" path="packages/providers/MediaProvider" revision="b6fe2868a295f9d06d02b1144416a011ead8bd9c" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/providers/PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider" revision="96d0a80af45923767baf449fc8c735c2f71d64ae" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider" revision="62def0e593d11eedefd0a65f906d3b50688a58f7" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/providers/TvProvider" path="packages/providers/TvProvider" revision="cbf803cd8173de410f8607f5ef505c4e5546a00c" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/packages/providers/UserDictionaryProvider" path="packages/providers/UserDictionaryProvider" revision="4b8c193a685dd68723eafccdf75b77e606ef84d0" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/screensavers/Basic" path="packages/screensavers/Basic" revision="70c5566f4d845bc42a2f785a46c112e3a0178496" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/screensavers/PhotoTable" path="packages/screensavers/PhotoTable" revision="420059ea01d8a6c1f75de9544fd2d96dae6209fa" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/screensavers/WebView" path="packages/screensavers/WebView" revision="6e0a80f6faed6191acc8ce1b6c79eada09e9e042" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/services/Mms" path="packages/services/Mms" revision="29ac952dbcd7f5f549d8ed5f4b62a80409992b0f" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/services/Telecomm" path="packages/services/Telecomm" revision="3e06c19979d1ab0a2f511ac3bc1916589922d6bc" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/services/Telephony" path="packages/services/Telephony" revision="6e011b8f94cccf230c4fbbf4ad0095138461abbc" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/wallpapers/Basic" path="packages/wallpapers/Basic" revision="dd4e99f1f91bd722deca2c605c0769621899ef8d" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/wallpapers/Galaxy4" path="packages/wallpapers/Galaxy4" revision="83ce967f34f1b099fafef55d5c23ba4aea78dd64" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/wallpapers/HoloSpiral" path="packages/wallpapers/HoloSpiral" revision="9e86e7500241bed61738dcfa5a9ab8e9c2efe148" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker" revision="d8ad5ee1fb0bedf329e327aa73e7f3e7ed622bab" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/wallpapers/MagicSmoke" path="packages/wallpapers/MagicSmoke" revision="389c216be2e5570bad0702089957dd61cc7e3dd0" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/wallpapers/NoiseField" path="packages/wallpapers/NoiseField" revision="246bb56f56e629312a7a88cae9466008960756f7" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/packages/wallpapers/PhaseBeam" path="packages/wallpapers/PhaseBeam" revision="e43b65db64e1bd5e4205aa2eafd0349105bf8cec" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/pdk" path="pdk" revision="79fd085e33855501880f4687c8cab57dcb104be3" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/platform_testing" path="platform_testing" revision="56d7df68d13d07d865a952fab94d30cef4e90515" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator" revision="b728a257b2a06f1d18b7349dc2e90bebd013bbd4" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,darwin" name="platform/prebuilts/clang/darwin-x86/host/3.6" path="prebuilts/clang/darwin-x86/host/3.6" revision="3c60fb5744ce4fbde988fbc24e38a8d9e5a58e59" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,linux" name="platform/prebuilts/clang/linux-x86/host/3.6" path="prebuilts/clang/linux-x86/host/3.6" revision="0c2a464041d411a08fbc952f255fc381250e36c7" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/prebuilts/devtools" path="prebuilts/devtools" revision="d7638b6496f75e896badacddb40a9dd018553bfc" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/prebuilts/eclipse" path="prebuilts/eclipse" revision="cf9f78f8cf41b16edf9f712598a42743d5cea4af" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" revision="3344adbe898ae092b7bcc7c1f69d89980e39cbf2" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" revision="6d08ca9f45ff685648fd13c75bf5cac4b11c19bb" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" revision="7a80f8db4e0bd43e2ef53515cdb8f117cc65e9e0" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,darwin" name="platform/prebuilts/gcc/darwin-x86/host/headers" path="prebuilts/gcc/darwin-x86/host/headers" revision="4ac4f7cc41cf3c9e36fc3d6cf37fd1cfa9587a68" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,darwin" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" revision="8834958755acc291d126ba7ee38ac731d04f9c9e" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,darwin,mips" name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" revision="c66f0d207f430da9b45df9b3f1cc52af225d305c" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,darwin,x86" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" revision="ba8d2d6a9c96e1b17103c6bbf854cfce4b4803d3" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="4b341df712969ca2ac0c3cf6294260d406b9d9be" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" revision="26e93f6af47f7bd3a9beb5c102a5f45e19bfa38a" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="a0cb3720e4047bade36f8cfac84ea94715313a89" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" revision="63b209feac0b045f5fc68810fd2e65bf1ca51e2f" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" revision="f61a459478cdc31e8aae22a182cdbf814ba08012" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" revision="f691cae2f256d5f72388c0ce9113007a53ad333a" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,linux,mips" name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" revision="9ceb135814c47cad4858083228fd9615aaaa7c84" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,linux,x86" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" revision="3c6dc0e9c16b4ed1ff43aef82a4bbec739aadcff" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin" revision="4b5b2b4359affee9480edc80b9e24d88a36f3ba1" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/prebuilts/libs/libedit" path="prebuilts/libs/libedit" revision="d32685dba4011664b590b94ad156bc734c2c9bb5" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" revision="40439dc164bb70511c9100bd15face161784ad56" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/prebuilts/misc" path="prebuilts/misc" revision="51a5ceedfc0ab82cc1e991ed36387a84957fac7b" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/prebuilts/ndk" path="prebuilts/ndk" revision="ed603f9b7893442321e50d96bf226c27da1c279a" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="darwin,pdk,pdk-cw-fs" name="platform/prebuilts/python/darwin-x86/2.7.5" path="prebuilts/python/darwin-x86/2.7.5" revision="0b1ee9ec23565fd52a6f20d996a16977d0fa7ead" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="linux,pdk,pdk-cw-fs" name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" revision="f63d822b31f41bc1be234ad64a7f09de9221444f" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" revision="958a5ddd2f7eccaf025ada539fe5c0a5cf4fbeba" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="781141ddc06de76ebf323fef66b8a3f57333f22f" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" revision="226ad5df99e6863aecd8ea9450ea105a787f65ff" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk-cw-fs" name="platform/sdk" path="sdk" revision="3c9c2be94a1b36a7e01c9011966137badee8b843" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/system/bt" path="system/bt" revision="3160adc48f646ad83d6f983fdac5d93cadb1cf40" upstream="LA.HB.1.3.1.c1"/>
-  <project name="OnePlusOSS/android_system_core" path="system/core" remote="oneplus" revision="oneplus3/6.0.1"/>
-  <project groups="pdk" name="platform/system/extras" path="system/extras" revision="81eb206a055bd161ef3ff3a895139b1c4ed5f615" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/system/gatekeeper" path="system/gatekeeper" revision="e547f93b0089f12c78d33b83e5f49fdb0e0c85bc" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/system/keymaster" path="system/keymaster" revision="5bd3321e9198cb9d4f78f089c47b01635717c335" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/system/media" path="system/media" revision="96ff7b9230b58391308de9979ad22f05cc91555e" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/system/netd" path="system/netd" revision="f455a2b4249f090bdc16ddbd754d598ed3805993" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" revision="1e2073ebaf987cfcca09c52ac50f8335728b1480" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/system/security" path="system/security" revision="d35cf5ac7c85fb2fdad71af8e2e8dc1715677f51" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="pdk" name="platform/system/vold" path="system/vold" revision="85408cad63b6756aa319bcdf05a51730f004e325" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/external/libnfc-nci" revision="8678cf01e83d326f536ae7096628f382200ef8cc" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/frameworks" revision="a812b47e94856568de66a6d96af03a4ec9fbcf35" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/packages/apps/Nfc" revision="930ef0c3198d29713f9bf6132bc93a87bc7e0f6c" upstream="LA.HB.1.3.1.c1"/>
-  <project groups="qcom" name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/bluetooth" revision="8a1ef5478ee08c4954f9e89da41cc1c4798bdd7b" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" revision="0c2217d541fc8717f4086ada5e7ebb6bd62ab755" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" revision="21e5e4454102134ee837827edbf6a390da0fd7ef" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" revision="13e5998c0fa4275398f66eb5715e557c2a7e8d69" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/vendor/qcom-opensource/fm" path="vendor/qcom/opensource/fm" revision="c82511412ddf085acae3fe265fbf6d3f90dd524e" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" revision="df68a7f5f49ec330082ed295bdff3dbad30155f5" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/vendor/qcom-opensource/kernel/kernel-tests" path="vendor/qcom/opensource/kernel-tests" revision="8a97a3269f7577fd09b223817e7621cbd37203a3" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location" revision="36c5e9bcb8b990be46cbaf1b85168ed0e652e696" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" revision="e0a99f30a2ea358fd63f1c567074e47fbc979225" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" revision="741010b751593824f541452939c8775a7e3b77f5" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" revision="cf837b0c86f3229b83aa1ccdea85cb33330a1ad7" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/vendor/qcom-opensource/wlan/qcacld-2.0" path="vendor/qcom/opensource/wlan/qcacld-2.0" revision="a89532a416c470144e6158c4dc1c2c7d6f2bc310" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="8509830b90dc385c25e53a5f6820ef46a85e6d1e" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/vendor/qcom/thorium_32" path="device/qcom/msm8937_32" revision="789b538fb2f7b01817d646327aa1e62f42bdf5b2" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/vendor/qcom/thorium_64" path="device/qcom/msm8937_64" revision="2d7ea2a2bc3c9e21d99a71163f804cd6a5bbc3ac" upstream="LA.HB.1.3.1.c1"/>
-  <project name="OnePlusOSS/android_vendor_qcom_thulium" path="device/qcom/msm8996" remote="oneplus" revision="oneplus3/6.0.1"/>
-  <project name="platform/vendor/qcom/titanium_32" path="device/qcom/titanium_32" revision="2ddd4dda5a1aba363740a21934e7ecd1279f23a5" upstream="LA.HB.1.3.1.c1"/>
-  <project name="platform/vendor/qcom/titanium_64" path="device/qcom/titanium_64" revision="518fef15f413fef5aac7cc5dc009ca58a177941c" upstream="LA.HB.1.3.1.c1"/>
-  <project name="OnePlusOSS/android_vendor_oneplus_oneplus3" path="vendor/oneplus" remote="oneplus" revision="oneplus3/6.0.1"/>
+  <project name="platform/build/blueprint" path="build/blueprint" revision="8a2c1ed9c3d349b7c497aa4e8fbe44db21a654e2" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/build/kati" path="build/kati" revision="e7c4743b376c1a05ce779e4d626e49af8e6c1045" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="OnePlusOSS/android_build_soong" path="build/soong" remote="oneplus" revision="oneplus/QC8996_O_8.0">
+    <linkfile dest="Android.bp" src="root.bp"/>
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
+  </project>
+  <project name="platform/cts" path="cts" revision="fdc7ce8d2e94f5e8b8ff9f831024dcb2cd30ec97" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/dalvik" path="dalvik" revision="ea156633342d2498c391695ec2f0f9fd58fb2c73" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/developers/build" path="developers/build" revision="6f1bbd6b9589818154d555f216e800223ce5d063" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/developers/demos" path="developers/demos" revision="7bd7834eee082f32ae8eaab9bf014d77c6cf521a" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/developers/samples/android" path="developers/samples/android" revision="a8c6307fae854e21a66498aa3c1badd717ea375f" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/development" path="development" revision="e76d9468e76e64f2de28016f2d419c646e0d96a5" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/docs/source.android.com" path="docs/source.android.com" revision="68e91911971bc0f0a4d766824021805965d6c2e3" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/ImageMagick" path="external/ImageMagick" revision="6d5e443d5f090be54f0f1623171bf83102c0e688" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/Microsoft-GSL" path="external/Microsoft-GSL" revision="c7231a8b061cb44839292cf4de1aa2b8d3fc165f" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/aac" path="external/aac" revision="6b053baa12b808c9e222735972b4e4fc568d4e4b" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/abi-compliance-checker" path="external/abi-compliance-checker" revision="2cce41de7ef1c23f88acc611becf1431278f78e1" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/abi-dumper" path="external/abi-dumper" revision="e062b1e470fe01b3e4ab1c108505cf0ae307791c" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/android-clat" path="external/android-clat" revision="1363dbc12a973116115b8ebc5901b53a8c12d99d" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/androidplot" path="external/androidplot" revision="c66727ebf001607cee14521c35bc852b55fd9845" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/ant-glob" path="external/ant-glob" revision="a73228afa9540b9c5518d360c5ae630bb634f975" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/ant-wireless/ant_native" path="external/ant-wireless/ant_native" revision="2aea8f447d4780f0d90c16ab1a91c58a252c043b" upstream="refs/heads/ant.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/ant-wireless/ant_service" path="external/ant-wireless/ant_service" revision="b616838fc8c89085742a542d528e2fd55d679ef9" upstream="refs/heads/ant.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/antlr" path="external/antlr" revision="dd5fa6d48b827c5d98b625adbc209f4a05567534" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/apache-commons-math" path="external/apache-commons-math" revision="18f62fca59d387e3c1ccd8f80087d9c9af40bcc8" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/apache-harmony" path="external/apache-harmony" revision="cb6753560e9a07d872321740bceee81388e28162" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/apache-http" path="external/apache-http" revision="4f1eab48da53c3770282a9b19fc5b03168cae86e" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/apache-xml" path="external/apache-xml" revision="31d7642eb8f37a9166db7f1c9e313ab651bdb8ba" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/archive-patcher" path="external/archive-patcher" revision="114e9bd30f3f91f2299a55da155dbf7a4522b658" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/arm-neon-tests" path="external/arm-neon-tests" revision="104e2a662ec8443e9a7603b22efbb3b86c1e7094" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/autotest" path="external/autotest" revision="482a17394a56bc312aaa6d793471dd425d7e77fb" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/avb" path="external/avb" revision="78aec98323f9293b7857761f2ab4ddf432448702" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/bison" path="external/bison" revision="7467d52af437dd3dfea237a6865ab84bf258dee0" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/blktrace" path="external/blktrace" revision="d345431f16b8f76f30a58193ff2b26d5853e1109" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/boringssl" path="external/boringssl" revision="fc41ccda6db286213857481219bd3e96b3ed0cbb" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/bouncycastle" path="external/bouncycastle" revision="eabf742759338634e342e2465bb8f947002f71eb" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/brctl" path="external/brctl" revision="85130b403dea07b2230efed3287236fa0caefb1c" upstream="refs/heads/data-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/bsdiff" path="external/bsdiff" revision="08c45b0da4b5f0f372b612797f4b01308a9ac9a4" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/bzip2" path="external/bzip2" revision="a535197905449c1f854e40b81a35f524a0b1479d" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/c-ares" path="external/c-ares" revision="9f1b2827cb88c58a80c470a4bddb2485677ec57f" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/caliper" path="external/caliper" revision="d39ccacab2ed7cc2c0085201786d28f9db78876a" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/cblas" path="external/cblas" revision="53ffe068d9bf5f9b0507a659159dab7bd9c18a49" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/chromium-libpac" path="external/chromium-libpac" revision="8cdb94f0b2cf0923f65947880adda639c17f8fa9" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/chromium-trace" path="external/chromium-trace" revision="e1c24ddb2b340fc6c6d947d6c5c9b1d17d5ed52b" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/chromium-webview" path="external/chromium-webview" revision="370703ab5f61f7e22a798266666cca441c7cc490" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/clang" path="external/clang" revision="9384444e3b4d407a9ab57bf1d54345340d00fe63" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/cmockery" path="external/cmockery" revision="9199c7bfafefea32d1884182fa655b6e4578c1c4" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/compiler-rt" path="external/compiler-rt" revision="ca840408df1590b19779823b89baec0e05647d3d" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/conscrypt" path="external/conscrypt" revision="cfd6d42b80dd831df2664d8db2c582518935c30d" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/crcalc" path="external/crcalc" revision="5559610bea3b267abef3273868f2d6b8c01409a5" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/cros/system_api" path="external/cros/system_api" revision="ba7cea36567a224c52ba06f153d9a8f62a71c264" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/curl" path="external/curl" revision="f0572939dc4831a038e41f2e88ca0599772cef10" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/dagger2" path="external/dagger2" revision="0fff30dbb251d3696a06a5ca2baf61bffaff8363" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/deqp" path="external/deqp" revision="e520787e604bc89ca545e427d12ea02728c33bef" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/desugar" path="external/desugar" revision="cba5d1ca9f0d798ce116148d721430aaebb97585" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/dexmaker" path="external/dexmaker" revision="c84b1c09bd952b27fb88f765214899d6ce01f1ed" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/dhcpcd-6.8.2" path="external/dhcpcd-6.8.2" revision="b3e401ad788d3a42a9c7de524becfb665ec7b166" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/dlmalloc" path="external/dlmalloc" revision="6661f3ca66b55d8f5a57b96fec97efaf8f3897a5" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/dng_sdk" path="external/dng_sdk" revision="0aac8a2c19610e353e495c7421e82c6afba69dea" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/dnsmasq" path="external/dnsmasq" revision="217cc1600c8715a12c999611ced5a3253de05f9d" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/doclava" path="external/doclava" revision="a0f7bd8ca4ee2fac03b8986647262b63519df9eb" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/donuts" path="external/donuts" revision="005389fb31a67841b5de42f0d25fbfab843e208c" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/drm_gralloc" path="external/drm_gralloc" revision="f2936dc85a5f92d4dcdfa7b46066c9cd64086720" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/drm_hwcomposer" path="external/drm_hwcomposer" revision="48cd4b409466f33b03a338578806fed3ea6eb6c7" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/droiddriver" path="external/droiddriver" revision="2e4e0b562cba97949b296952fd8f2673dee89e2f" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/dtc" path="external/dtc" revision="5505811804c15c68e1637eed47519e117055619f" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/e2fsprogs" path="external/e2fsprogs" revision="847c0b3ccf03f6d3ec23eff9980d07585eb69276" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/easymock" path="external/easymock" revision="8bc2748f2850c88ab6b86c6ceed1ce65bed5ee16" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/ebtables" path="external/ebtables" revision="3f430ac843caa90f25c5b4f695cf350beadec671" upstream="refs/heads/data-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/eclipse-basebuilder" path="external/eclipse-basebuilder" revision="076f46888ed346775b8efc564d7694063ef5eea7" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/eclipse-windowbuilder" path="external/eclipse-windowbuilder" revision="c533332008088ee5f61745b724361fbde5b7e770" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/eigen" path="external/eigen" revision="18b15cce3281bf89ec83e23dc04b700f585efc8c" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/elfutils" path="external/elfutils" revision="f1f212563ee672a1eca4238a5cc6ff1e969ec071" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/emma" path="external/emma" revision="deb5711b2635ee9d332605e2e00b63b32bed6777" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/esd" path="external/esd" revision="943c42b6f8e9afe821744aa4c039f4943ebf29f5" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/expat" path="external/expat" revision="723a784d68da53c106df1991da33e03ce5ce0b30" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/eyes-free" path="external/eyes-free" revision="16bd4c7a4d1bfe229068b637614dad7c48dd2ceb" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/f2fs-tools" path="external/f2fs-tools" revision="91fa4da13f0627556bcf190a4164cc0282ee007d" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/fdlibm" path="external/fdlibm" revision="fcd17254a9e59ceb0420d4a2faf29db6b004c443" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/fec" path="external/fec" revision="4342555427f5bb0788dfacd1eb07d2876afab733" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/fio" path="external/fio" revision="8e4fcef29b6e6f22a27c4a80ec663197e3c7fcc5" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/flac" path="external/flac" revision="4f476464be04a4a583a93725af197e797cee0d39" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/flatbuffers" path="external/flatbuffers" revision="83d6225e9b642ea069023e45a943d3e7f916fb62" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/fmtlib" path="external/fmtlib" revision="f4d6768e2595b881a146e41e275f77203db9bc56" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/fonttools" path="external/fonttools" revision="fede58680958e96e6e8f61c3cc6282f798452c53" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/freetype" path="external/freetype" revision="b83312a114010e1acb4c8c662b0659fb6783ddb9" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/fsck_msdos" path="external/fsck_msdos" revision="4103a4ab7d45b439b4f7297a2129a1ca45ec91dd" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/gemmlowp" path="external/gemmlowp" revision="583dbde5c404a50ccc0180a963e0af3b8130d41a" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/giflib" path="external/giflib" revision="4219f10537c1f793b30d18f44d94c13f95dd8362" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/glide" path="external/glide" revision="31e64acd1e65045471124267a06241eff1f55d26" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/google-benchmark" path="external/google-benchmark" revision="483d43f5f689ce1ea8d864e24fb106c73d24080b" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/google-breakpad" path="external/google-breakpad" revision="5702aec91e04d86b7e850d00243b6b9035b5923c" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/google-fonts/carrois-gothic-sc" path="external/google-fonts/carrois-gothic-sc" revision="0062a10458d4c357f3082d66bcb129d11913aaae" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/google-fonts/coming-soon" path="external/google-fonts/coming-soon" revision="2c5cb418c690815545bbb0316eae5fd33b9fc859" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/google-fonts/cutive-mono" path="external/google-fonts/cutive-mono" revision="bce2136662854076023066602526ba299e6556b2" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/google-fonts/dancing-script" path="external/google-fonts/dancing-script" revision="7b6623bd54cee3e48ae8a4f477f616366643cc78" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/google-tv-pairing-protocol" path="external/google-tv-pairing-protocol" revision="7a5b2c7bd1f6c7847fa2dad591788177a59d6f74" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/googletest" path="external/googletest" revision="c38ba78451fc8a16a6dda507b14dd04ed64f18da" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/gptfdisk" path="external/gptfdisk" revision="f36964241bdd1d1ceb2aa4377a940268ee98e440" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/guava" path="external/guava" revision="42dd6f38ba6cda54923e76acc55f5c89d9a13e56" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/guice" path="external/guice" revision="c94f47512257b4ce1d748451161fe93445bf9c9a" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/hamcrest" path="external/hamcrest" revision="acdcb536f99925df6d73e2b1df0f9aac45682cb3" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/harfbuzz_ng" path="external/harfbuzz_ng" revision="9d26079ea6b3e05fd346118eac4359e7cec76513" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/hyphenation-patterns" path="external/hyphenation-patterns" revision="b15c2497c295eee1d3c543fcca97271001640432" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/icu" path="external/icu" revision="55fa86624a9fc99d6f0b757858a06d42cec85d99" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/ims" path="external/ims" revision="d42947ba3e64f6a80085cde2f7cd459a02d6571c" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/iproute2" path="external/iproute2" revision="499b05b1636371aff54b9e974feabd22bca8f6d1" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/ipsec-tools" path="external/ipsec-tools" revision="c4531e5b09403a9954213dfb18d0deaac5badc12" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/iptables" path="external/iptables" revision="be1e5a9c231cbfdadd79a2d8aff14c74f62739be" upstream="refs/heads/data-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/iputils" path="external/iputils" revision="b040eb07a270166190dcaa3920a637c2ea383970" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/iw" path="external/iw" revision="33ae56f68644e06de194d63097fb2a03b2caadee" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/jacoco" path="external/jacoco" revision="6480b3453dca08bece4da67290b79a84c9f2dbc6" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/jarjar" path="external/jarjar" revision="edbd51743ef6a0cb0b17097353d1225e14c747e9" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/javasqlite" path="external/javasqlite" revision="ee41d81872eedc632f42bd231b95bc945690d159" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/javassist" path="external/javassist" revision="f7c4b954072e563b75f6910c25bb689bbf38a3d1" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/jcommander" path="external/jcommander" revision="9a3ba316f5b73c3a19291b92534e990eec263e8b" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/jdiff" path="external/jdiff" revision="178a31867169e7c622806020e7a5ce773c02c7c5" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/jemalloc" path="external/jemalloc" revision="69138de88c55b2f8cfee5bd35b1ee86ea9376bec" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/jline" path="external/jline" revision="74812032f8d8eddbef387f18c96de9e5c38b8fdb" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/jmdns" path="external/jmdns" revision="0c71647deb7f7835c473fd3dfb45943083e47794" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/jsilver" path="external/jsilver" revision="b9b84920ba47ddf7f15baa01c56b28e3d3f951ea" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/jsmn" path="external/jsmn" revision="358037da0e95ef7213c5a8c6a0be4508749e7be0" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/json-c" path="external/json-c" revision="e5925dfa4d5e463d750b66468baef094f5542196" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/jsoncpp" path="external/jsoncpp" revision="06dbba13ea92eeecb84164fbde96e874fa975651" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/jsr305" path="external/jsr305" revision="3278bcfa33f28b1465f0b7212a2aeb855608b753" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/jsr330" path="external/jsr330" revision="d00e8235f22162768fbc8f17deb7abbcd30a94c5" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/junit" path="external/junit" revision="719814ae3d3f181b3ef8fe3a78631480ea4852a3" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/junit-params" path="external/junit-params" revision="f15174160bf56d026afb3650f6b284192534e2c0" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/kernel-headers" path="external/kernel-headers" revision="08e3a47170fffe2447430a04e01281ebc36fbfe2" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/kmod" path="external/kmod" revision="4082ee0d1ad5ce92c5ea6fdc5ca08e89cdd9801d" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/ksoap2" path="external/ksoap2" revision="9fdc4a6bb2b882bd1d6c822d2ad0c66585d66ba9" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libavc" path="external/libavc" revision="95eec085f8d33bdbef0d734f02aeba12dccbb7d1" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libbrillo" path="external/libbrillo" revision="b29605b10b38ef93ceca84b56c092f3bb0b119c4" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libcap" path="external/libcap" revision="3328b782d9ebe50852e3b1327590ac8302756de6" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libcap-ng" path="external/libcap-ng" revision="835f318b9785a70415980fba96c34ee5c6b7e415" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libchrome" path="external/libchrome" revision="acdb0e5e7593f603fcf8e2e7cdf4d817a44a0650" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libconstrainedcrypto" path="external/libconstrainedcrypto" revision="fca75c837bebfbd51927156158de36fc517742f7" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libcups" path="external/libcups" revision="2b9f1f5b8cd58c344378c9825b81a3b6c2b5abc8" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libcxx" path="external/libcxx" revision="ee82272d08fc0b78f23678a8830f704a5a78a349" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libcxxabi" path="external/libcxxabi" revision="eec931d65e7f1bc39794f00efba7d4211663b9a3" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libdaemon" path="external/libdaemon" revision="e2f604066d97431c95856c73d7b9ee46b348d37e" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libdivsufsort" path="external/libdivsufsort" revision="2a896e7033ced391c57ec46c1d772b15417621a4" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libdrm" path="external/libdrm" revision="dfd42cfbee9939bb6d4a383928f3c581cbb3d40f" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libedit" path="external/libedit" revision="67e14dfc833aafa400a3aad8cb329cbaec503445" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libese" path="external/libese" revision="a118b904a15db2f1dd2aa7933f527ad72277c290" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libevent" path="external/libevent" revision="5479abaae3e1057aa3af584433bb8516cc0db775" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libexif" path="external/libexif" revision="1689c992265c8f0682a361bbc84f239109a0dc75" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libgsm" path="external/libgsm" revision="d40db25927852c76198293e021bd392cd7c2de68" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libhevc" path="external/libhevc" revision="6721f58b1e74769644928f193b6204bdf3b6650f" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libjpeg-turbo" path="external/libjpeg-turbo" revision="9d83bec45cfeec26f8bf9c646b9c2774ab8696c1" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libldac" path="external/libldac" revision="6702e4fd11b363674dde11dc758d6a4fb98e35b2" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/liblzf" path="external/liblzf" revision="a88b9629447deabe8697d2f8fd4cc70aa6e1b563" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libmicrohttpd" path="external/libmicrohttpd" revision="1e68f5d827a859ba3b7ab6a70a60247e0b96afa5" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libmojo" path="external/libmojo" revision="25d52424ec01ca2a092fd2de4f6e351e6f29cbad" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libmpeg2" path="external/libmpeg2" revision="20c587dfeaa57e4cf1d04622b5cec656b9ddbad0" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libmtp" path="external/libmtp" revision="7ed2065db3ab9851f47426f3a35ba7045ce528b2" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libnetfilter_conntrack" path="external/libnetfilter_conntrack" revision="7307cb41cab059d6e1c16b3f11c2fa0a4b7ff14a" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libnfnetlink" path="external/libnfnetlink" revision="8909e8c2d62e145133c2f3b1565a254f7c198cd5" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libnl" path="external/libnl" revision="5a2fecd078b8872bc68f8489be50c12b74ab7be5" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libogg" path="external/libogg" revision="6dba790f3372d03eee07c693789166ca9fa07b0a" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libopus" path="external/libopus" revision="f8c018bbe70b22693d105579d01574b6368377c4" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libpcap" path="external/libpcap" revision="8aa3ae47c5b44a04f365bf30bcb9d0b1b69d6478" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libphonenumber" path="external/libphonenumber" revision="eadbaf8ba08dc13ecdb5e57bcfaec2f2248e7e4f" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libpng" path="external/libpng" revision="ac5faa14867930473d2552fdfeb7178cdcbed4b7" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libtextclassifier" path="external/libtextclassifier" revision="b79daa44342b273c0098520c1375ad3045a06618" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libunwind" path="external/libunwind" revision="768cc7dcf75d6a98c112d83ade67701d3728847b" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libunwind_llvm" path="external/libunwind_llvm" revision="4d1e8baf6a7bc5d1b07b3754e17975e1fe1ae58e" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libusb" path="external/libusb" revision="723eef28307737e21348b124234c18eba2038764" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libusb-compat" path="external/libusb-compat" revision="759481ae400d02fe99488dcdcd653b4f8139a39c" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libutf" path="external/libutf" revision="853ef375ba2ce430f5b13b556812b2d83ccc82e1" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libvncserver" path="external/libvncserver" revision="a33e8e96b55a6b047f073d119191a8a89c75cb06" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libvorbis" path="external/libvorbis" revision="dee2e0a12822ec62c89c2d7582f1a7d32cd0875b" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libvpx" path="external/libvpx" revision="62a9e9ba887e0abe64820241c3ba588419eec58f" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libvterm" path="external/libvterm" revision="6d78f36633063dad0689ca42be1ad8d0313ebfab" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libxml2" path="external/libxml2" revision="ec37336f8ab3514210aef288455edaa2f3fab243" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/libyuv" path="external/libyuv" revision="f7fb815e38a479c9d40715b9d786b0f9d1e64096" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/linux-kselftest" path="external/linux-kselftest" revision="32a5e23a7e4202fb7b194b22eb3d96700b4758dd" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/littlemock" path="external/littlemock" revision="481b1fc280bbb7c4e528df70864882fc59840ed6" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/lld" path="external/lld" revision="26c9bb3b51a7ac4bc45f73d532a03cfd9982043a" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/llvm" path="external/llvm" revision="bc566e2ca6843f983487a2c3e905e73ff7399903" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/ltp" path="external/ltp" revision="d0ace993a5e702b3c50bbafe12991a07001b31d0" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/lz4" path="external/lz4" revision="d078038995bdd51e1f3839b7c10d11134c2eb6c8" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/lzma" path="external/lzma" revision="b0d08fdc9da9cd57425be36749d8aa659dc5416e" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/markdown" path="external/markdown" revision="06a8f8b914d477183f68b84424bce8ff4dae7e84" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/mdnsresponder" path="external/mdnsresponder" revision="96d808009764bfb1ca6d3fb3aa010ca954d2b04d" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/mesa3d" path="external/mesa3d" revision="586cfa78861e71160d5a3dbeaff09554829a1027" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/messageformat" path="external/messageformat" revision="907c6d3a0e6887fe89da48f51012d0c14d881511" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/minijail" path="external/minijail" revision="66adbb6ec6e33f6beb6847acc0bb87b0f2b80d98" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/mksh" path="external/mksh" revision="d1d5a8abe239c574830404e077591f18a0996724" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/mm-dash" path="external/mm-dash" revision="10c3ae1d659559831f46810bfa8d9ccdf293252b" upstream="refs/heads/video-userspace.lnx.2.9.r2-rel"/>
+  <project name="platform/external/mmc-utils" path="external/mmc-utils" revision="f105db5bd1934f0c3e5f74bbc9a5aaeac7a6bf2b" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/mockftpserver" path="external/mockftpserver" revision="d2d467778a561725d42bc6c17e826e7ccf970bae" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/mockito" path="external/mockito" revision="3fe7f5624e158c47be80a2ad86f846e2d4fbf8ba" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/mockwebserver" path="external/mockwebserver" revision="2440623105409d48ec0a3717bb6f3da711a0f15d" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/modp_b64" path="external/modp_b64" revision="547a8469420032e2354def12b679a3f53266f08e" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/mp4parser" path="external/mp4parser" revision="88bd0c6cfa7fcfbbebcc15c2c565f714cb36b065" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/mtpd" path="external/mtpd" revision="793cd4e6e35c96d74895a83101608c57b82a7c39" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/nanohttpd" path="external/nanohttpd" revision="c6783c32331b3fe78ffd5077e7f180995d0e268e" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/nanopb-c" path="external/nanopb-c" revision="b225eb267957f24ca2aa2469bc78d418b2e9b795" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/naver-fonts" path="external/naver-fonts" revision="91e6e9f94d1d769a8f742649674149ba98ce7d45" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/netcat" path="external/netcat" revision="b023a43765b15f0b0fd5b52b7d8021f515c59c23" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/netperf" path="external/netperf" revision="e100a0c4105b94f7044b243287a5da22f5e8e4e7" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/neven" path="external/neven" revision="95e6c4663c640c67a69e1d2b44696753282136f8" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/nfacct" path="external/nfacct" revision="4e23be5b152185261a6154679406a661b39de6f4" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/nist-pkits" path="external/nist-pkits" revision="ca6b41c541f92f8e9c928561ff2b0890f337ada6" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/nist-sip" path="external/nist-sip" revision="8445067c3b53e5bd56c32f1c4fb688083c4f4005" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/noto-fonts" path="external/noto-fonts" revision="b8a337c7a47b0faf0b98278d07e594430aa25136" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/oauth" path="external/oauth" revision="49f3624a6d3307b640a012f15b94d04174473501" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/objenesis" path="external/objenesis" revision="344dc63ed35e22ee1d1e6a28a7ea09b9fd3115cf" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/okhttp" path="external/okhttp" revision="2d87107ec8eb745f88d2c3096080480d3af514d3" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/opencv" path="external/opencv" revision="c42a7f68da372776861437ea5a12a9ae54d934ff" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/openssh" path="external/openssh" revision="9c8dfdf49be51674d89f7688b949d71e0cc0886c" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/owasp/sanitizer" path="external/owasp/sanitizer" revision="bbfb25464ff30c5a62dce351d719a8c533afb2a3" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/parameter-framework" path="external/parameter-framework" revision="247231a17211f56a96e6a595a9eedadc06231242" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/pcre" path="external/pcre" revision="140240051d1a90e763d4f1e3cfa15612c5d11715" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/pdfium" path="external/pdfium" revision="9ad12e0bbd72cd066c7194e023b83c352175871d" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/piex" path="external/piex" revision="3f1592745d243620392d0f0f99dda5524bf8d99e" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/ppp" path="external/ppp" revision="b870a67b1bedd7ac54655e1dae3b693e028ba268" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/proguard" path="external/proguard" revision="af893cdc1242e4cfbeeb10e2323f9a689a825177" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/protobuf" path="external/protobuf" revision="4555968d0b7e89ffb240cef020a52df62f4e6eff" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/regex-re2" path="external/regex-re2" revision="79cce43a82abc1bc56c65de07a7df47d54e163a9" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/replicaisland" path="external/replicaisland" revision="f8141d8f29324a67ecff1a9f597608dbfbce8554" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/rmi4utils" path="external/rmi4utils" revision="5acc3e7ec6ed784d757269f4a6323a156481468a" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/robolectric" path="external/robolectric" revision="3585bfe1e857c7207fa0c37ccc4f679213d9848a" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/roboto-fonts" path="external/roboto-fonts" revision="43bca93cf5778f0cbb9c00a0c2b44eff1e99cfde" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/rootdev" path="external/rootdev" revision="bddf3893836a014e7c2e664a50acd2e640f6f561" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/safe-iop" path="external/safe-iop" revision="cd76f998688d145235de78ecd5b340d0eac9239d" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/scrypt" path="external/scrypt" revision="aed3ac4c6bb550db63922831178d32468b4c6440" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/seccomp-tests" path="external/seccomp-tests" revision="fd35266681dbd1b5d992081c573227d5978aa5da" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/selinux" path="external/selinux" revision="2a337e23a273371caa6e5e60afcaa3c9d2586bc7" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/sfntly" path="external/sfntly" revision="a0398361a7595f031e4bbf416132bb56924164ab" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/shflags" path="external/shflags" revision="c4876e01829b8cf110ee33267bb1bad1f8ebb51d" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/skia" path="external/skia" revision="4fd38da90541bea4a5812ce723d87b5fb8c751e3" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/sl4a" path="external/sl4a" revision="448071f3e2e8435b421e98cb892c92edee5482bb" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/slf4j" path="external/slf4j" revision="6e9286aecedbe7e70ad9e5bcbb336ff391b18f5e" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/smali" path="external/smali" revision="e63a24a8461a3dc15d356f35e28ca2d51ec736c5" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/snakeyaml" path="external/snakeyaml" revision="fc00622a0dfdd34c9cbc51a171d591a6864df3dd" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/sonic" path="external/sonic" revision="0227d834966b304525869d88fd20b2ac835df878" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/sonivox" path="external/sonivox" revision="c7f448dcdb8a4fad0443f0f0fb7054759193a08a" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/speex" path="external/speex" revision="40b37fab8535e6bc7e3a06333af30ac222db82a5" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/spirv-llvm" path="external/spirv-llvm" revision="60a7eaee1fc4dda9c90ab21ab91c8c9e7ccce3a2" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/sqlite" path="external/sqlite" revision="0fb0152493ebbb7778a6d7440b5a7bd5ea6d0c53" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/squashfs-tools" path="external/squashfs-tools" revision="5b4709ba460869ed66f971115acfa88425a3faf8" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/strace" path="external/strace" revision="54aae756d22258e5a7f13126681f7fb36c6ba06e" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/stressapptest" path="external/stressapptest" revision="ea469443e9c2cd1fda87188df2b1ffe0e30656b2" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/svox" path="external/svox" revision="bd9252d49119699cb59c88cd226b8ccb7a2d2738" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/swiftshader" path="external/swiftshader" revision="44e01ffb62f5fedb4560364b97f90d60ca077b90" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/syslinux" path="external/syslinux" revision="76d05dc695b06c4e987bb8078f78032441e1430c" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/tagsoup" path="external/tagsoup" revision="9c02d9f506855965ec513685788890dfc856a5bc" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/tcpdump" path="external/tcpdump" revision="ed6f17f367326dbcc87241e956474662f1e059b6" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/testng" path="external/testng" revision="1d7bbdba751215e9cf52f1f92f3591aa4e9d5894" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/timezonepicker-support" path="external/timezonepicker-support" revision="99e91a76fd74bad10266623d67cdb98d011f709e" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/tinyalsa" path="external/tinyalsa" revision="895868275daee41c11943b4a457f645e8db56f72" upstream="refs/heads/av-aosp.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/tinycompress" path="external/tinycompress" revision="1e509bd1e488944dc6724ca10e5818b2646e6329" upstream="refs/heads/av-aosp.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/tinyxml" path="external/tinyxml" revision="ec93b36ca41cbc0ec75b349c47ae5dadf3d24029" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/tinyxml2" path="external/tinyxml2" revision="b626cb901a437beb960f73201c61c9f9cf54d4fb" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/toolchain-utils" path="external/toolchain-utils" revision="3690e025de8daaed03c4acb02d2b054e5c4c0dd5" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/toybox" path="external/toybox" revision="be4de06abd2357124bee01125a0541c322d72e73" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/tpm2" path="external/tpm2" revision="d9818982c4e8d7e72c9fc1a64c0ad9f7d375d7c0" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/tremolo" path="external/tremolo" revision="88c6c40ebec91db32cc6f74bf9c6fc2fdf9a008b" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/unicode" path="external/unicode" revision="e841282434dae55614056ad644bea8cf4c8cb5af" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/universal-tween-engine" path="external/universal-tween-engine" revision="75d2d4e1d27ca8ccf0fd7dc4456b0a3dcf509dd2" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/v8" path="external/v8" revision="390ab1bd3bf6ca417dd660abd02fdb7661c32b39" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/valgrind" path="external/valgrind" revision="d02a1bda402f6e8910ab0803f396ecaf4a300cc9" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/vboot_reference" path="external/vboot_reference" revision="c7834748f90cdffed126ee598cfc2cb75a191961" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/vixl" path="external/vixl" revision="5ccf3fe4189ca398d2e12d1f59f5daeceea28fb2" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/vogar" path="external/vogar" revision="31062d1531c0f61bf1a18c59b69f491b8e2ecf42" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/volley" path="external/volley" revision="cc450f2af9e8d74d134883e3085688eeca34de38" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/vulkan-validation-layers" path="external/vulkan-validation-layers" revision="a7639e9f571f98afc71e638e0f06d56cd0b80976" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/webp" path="external/webp" revision="2d74869a1f8cb28cabcf0ed1a7849146d5c97293" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/webrtc" path="external/webrtc" revision="96e17a888ba7d4297296abfd57621dc6b804bfee" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" revision="5dd5e3f93b811ddb4f906d5ec6d8b657dbf23310" upstream="refs/heads/wlan-aosp-service.lnx.2.9.r3-rel"/>
+  <project name="platform/external/wycheproof" path="external/wycheproof" revision="46d28ac44a242d84d610a294a640266d3b0e033b" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/x264" path="external/x264" revision="7bf0b975cdfd5692a4598ab09e1258abe5ea5fff" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/xmlrpcpp" path="external/xmlrpcpp" revision="c79d4eae757a81270915c2a7cf01c81b8d42785e" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/xmlwriter" path="external/xmlwriter" revision="e95d92246ee35273dde2bee8b00485cc14c12be5" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/xmp_toolkit" path="external/xmp_toolkit" revision="42ea4dc6d1fc2206a7778029070ed9213e3b0fbf" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/zlib" path="external/zlib" revision="db998c3496b13285177540c923e26b7196c5060d" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/zopfli" path="external/zopfli" revision="069cb023c39358bc0e1b3dc0397b8fcdd84b4d44" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="platform/external/zxing" path="external/zxing" revision="fedf8f2d8099bf7bb85dc3db8699343d56617deb" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="OnePlusOSS/android_frameworks_av" path="frameworks/av" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
+  <project name="OnePlusOSS/android_frameworks_base" path="frameworks/base" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
+  <project name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="5ca4a1c3bc7c5afeca7f29589c23d08f239cf710" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="1a387ae7d3fa67723fdcfaa17ea353e8adc11834" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="b57a137a0135859c02197d9fdebc98644947914e" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/data-binding" path="frameworks/data-binding" revision="6f75ffb2c95bbffcfdab9ec6037ded684f5698f1" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/ex" path="frameworks/ex" revision="4b0478f92d5f1e46a10ed60128355604555fa269" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/hardware/interfaces" path="frameworks/hardware/interfaces" revision="0712e325357e45e88cfc64d4a55a6edb08fd10fb" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/minikin" path="frameworks/minikin" revision="c3d57c062ecaf15db112f9eb71e9b6eb6307ff53" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/ml" path="frameworks/ml" revision="22842969ee6dd0d3447b66d61007ad91d4593671" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/multidex" path="frameworks/multidex" revision="accfdd6b24602c40fdaf13d67ef6ad8c94779241" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/native" path="frameworks/native" revision="071aa61d9ffb1cc3fc5d5589bd6268946d5b4a89" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap" revision="a0d4e3108663202564a6833b76770075b8e5b767" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/opt/bluetooth" path="frameworks/opt/bluetooth" revision="549fb3bb64cd9fa816fc7f50c073fc2310d2dbd6" upstream="refs/heads/bt.lnx.3.0.r2-rel"/>
+  <project name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar" revision="397f1e5be11362ce66864075388a721e322d5839" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/opt/chips" path="frameworks/opt/chips" revision="e4c6503b3927bf3fcd55d07b5a427d04f498956e" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/opt/colorpicker" path="frameworks/opt/colorpicker" revision="a7c3ea2c46959b88600a21cdf3e1d4ed74d0e789" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/opt/datetimepicker" path="frameworks/opt/datetimepicker" revision="6341942629bb30f38e6fe737c69f97b0b38fcf5b" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/opt/emoji" path="frameworks/opt/emoji" revision="92eede13edbf22b501edb9aeb92366f91eab9781" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/opt/inputconnectioncommon" path="frameworks/opt/inputconnectioncommon" revision="3baece9b20fa480da46d860acd7320fd9eee3386" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/opt/inputmethodcommon" path="frameworks/opt/inputmethodcommon" revision="990fcb1a6dbb5d1204cc8ec86e4bc3f691f4aeeb" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet" revision="956b0a9aee5d43e05efdd79e21f7bcbeeaffc220" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" revision="6a99a190d35facd3405353a214eb0f9f0c4e9a75" upstream="refs/heads/atel.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/opt/net/voip" path="frameworks/opt/net/voip" revision="68a4203ed859d3f4789f1805d0590255827046c4" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" revision="d9a31d4bb8b4c52ee81942c05d4e51298894232f" upstream="refs/heads/wlan-aosp.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer" revision="0a70587cfd3a5fa937bb5cea6ac2b149ee472b23" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard" revision="cc75f38af115bef18266ffc42245c0fa0d5b1c8c" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="OnePlusOSS/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
+  <project name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker" revision="879c19dff7d40d943cebef0711f86a6343691f54" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard" revision="d38dbd9971ae250ea5568fd1be59a568f5d6ddf6" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/rs" path="frameworks/rs" revision="97220e089362650cc6f55f99ca092fa682897927" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/support" path="frameworks/support" revision="2c693e82370d5955550c2aa6c058c13c1dd65001" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/webview" path="frameworks/webview" revision="47363321242c4470c552d938753ab9aefdf57051" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/wilhelm" path="frameworks/wilhelm" revision="f512dde95ddc5bf4f81845a45257ad3f0d673587" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/hardware/akm" path="hardware/akm" revision="99e8b227cd00678ce863c04ebde0b8d9a6f7df5c" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt" revision="c7ffce6b4f3509f3e58acb92774ff7d0c21382db" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan" revision="b32eda0e23527fde3ebc61263ea7049b85400537" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/hardware/google/apf" path="hardware/google/apf" revision="3a229e4ca91eaf502357b584b469b8b287f7430f" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="OnePlusOSS/android_hardware_interfaces" path="hardware/interfaces" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
+  <project name="platform/hardware/invensense" path="hardware/invensense" revision="11e5ff75af866f91622b6008fa13db1c3685ae69" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="OnePlusOSS/android_hardware_libhardware" path="hardware/libhardware" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
+  <project name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" revision="97776649e9b5e9ca6c66b5ab78cb9b0efde12339" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="OnePlusOSS/android_hardware_qcom_audio" path="hardware/qcom/audio" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
+  <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" revision="410e37c2745b90452e23af8cee1bdedccf746286" upstream="refs/heads/android-blast.lnx.1.9.r3-rel"/>
+  <project name="OnePlusOSS/android_hardware_qcom_bt" path="hardware/qcom/bt" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
+  <project name="OnePlusOSS/android_hardware_qcom_camera" path="hardware/qcom/camera" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
+  <project name="OnePlusOSS/android_hardware_qcom_display" path="hardware/qcom/display" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
+  <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="a58315084bb3278338e8b2a1767ec3587ad6b290" upstream="refs/heads/location.lnx.2.9.r3-rel"/>
+  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" revision="1fa8e45a8c7f6971593cd0b3ac61832434614041" upstream="refs/heads/video-userspace.lnx.2.9.r2-rel"/>
+  <project name="platform/hardware/qcom/thermal" path="hardware/qcom/thermal" revision="339a9823ecefbc0ff311be4a7d4b94808dc12ece" upstream="refs/heads/qvr.lnx.3.0.r3-rel"/>
+  <project name="platform/hardware/qcom/vr" path="hardware/qcom/vr" revision="0a660bae268eb5f110470bf2f005dd45d325b24a" upstream="refs/heads/qvr.lnx.3.0.r3-rel"/>
+  <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="860ef2b91daafe73bb2341df159a9794b3b578d0" upstream="refs/heads/wlan-aosp.lnx.2.9.1.r3-rel"/>
+  <project name="platform/hardware/ril" path="hardware/ril" revision="f6952595fb6b9bc6c52d04a50348838ed84fee0e" upstream="refs/heads/atel.lnx.2.9.1.r3-rel"/>
+  <project name="platform/libcore" path="libcore" revision="bb29b15712546784797816fff84ac4f6257c6733" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/libnativehelper" path="libnativehelper" revision="8a74a54216b30efd97414910c97efa6903dc952a" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="44b6b0242cc6d683861203abb87634d2ba0308f7" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="OnePlusOSS/packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
+  <project name="platform/packages/apps/Browser2" path="packages/apps/Browser2" revision="ec236545477c50891862ca9affa04cb04a2a6069" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/CMFileManager" path="packages/apps/CMFileManager" revision="e32412838e6730ad2f5e77022841dba4ffd7875d" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Calendar" path="packages/apps/Calendar" revision="ba9f8d5fca565550d32e842c3912fc45e3df928d" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Camera2" path="packages/apps/Camera2" revision="f049301e98c1329d0448db4262cc8d512dde1182" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Car/Dialer" path="packages/apps/Car/Dialer" revision="dd926b75033fa1b722fc22640eb332eb4d36665b" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Car/Hvac" path="packages/apps/Car/Hvac" revision="5bfe608f576b55aeda1cf067ef80bf4748a5f0f4" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Car/LatinIME" path="packages/apps/Car/LatinIME" revision="cf624bd8cd93aec6c6b56351b566f3280563155d" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Car/LensPicker" path="packages/apps/Car/LensPicker" revision="a04019f6b9bbe925a1c9f79fad877b00a68a1610" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Car/LocalMediaPlayer" path="packages/apps/Car/LocalMediaPlayer" revision="6f81bd1300b05770133f3b18895173031b87390b" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Car/Media" path="packages/apps/Car/Media" revision="59f05fbc00707f6ff62e19bbabb9ca92514b357a" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Car/Messenger" path="packages/apps/Car/Messenger" revision="6d846d4e0f8b99d2fcd6912e09f231658461d034" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Car/Overview" path="packages/apps/Car/Overview" revision="f6b3e8ba62d070b0870eb9b0e70aa34bb7c363a9" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Car/Radio" path="packages/apps/Car/Radio" revision="fea8884e0189eb6e5dfa7ecf43fe42ff4afb26e7" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Car/Settings" path="packages/apps/Car/Settings" revision="b7e3bdd6f6658b8cce43eb446c7e4281a6f36da8" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Car/Stream" path="packages/apps/Car/Stream" revision="c19ea2d878bf135e36151e6d313eee8b1b743184" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Car/SystemUpdater" path="packages/apps/Car/SystemUpdater" revision="3506f3f39a1328465009ec080a741373b338bead" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Car/UserManagement" path="packages/apps/Car/UserManagement" revision="240360dcbcb2ed46c1f4a16615e87ceafd0d6419" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Car/libs" path="packages/apps/Car/libs" revision="c365871db5df5440757f31535ff78b35c1903c7f" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig" revision="3becd714fc7574e9edbc86c4411dd3f8741c6967" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" revision="9a450b79fbfd3b532533efb5f02f4d08093c546f" upstream="refs/heads/atel.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" revision="3007edcf9c5c269bd59495f6e543419b3608e872" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Contacts" path="packages/apps/Contacts" revision="8218715ac91f8f23a1c611ee5d4438111c1a4cb4" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock" revision="ce7c87081a3e628d91d93b8e683f9ac4f84e97b1" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/DevCamera" path="packages/apps/DevCamera" revision="e4d7dcd2fa0285db0f0b2ebeac663b2524f47e80" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Dialer" path="packages/apps/Dialer" revision="07e6de6ab6273c844f80ee05323b193fde1f0426" upstream="refs/heads/atel.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/DocumentsUI" path="packages/apps/DocumentsUI" revision="0e21cec57caeafe7c5c2d9d1e3b83c4358412cf2" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Email" path="packages/apps/Email" revision="67c9923964c19609b68f65bc0ad3912103c2b29c" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/EmergencyInfo" path="packages/apps/EmergencyInfo" revision="b3a4714efaa880994815c358409cf4a9a4486bfa" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/ExactCalculator" path="packages/apps/ExactCalculator" revision="3c7d8f62786e738fd75b808819ba9675409b0768" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Exchange" path="packages/apps/Exchange" revision="fd4abb641be3a688b5d5e7cc744a72aa2e8d9e21" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Gallery" path="packages/apps/Gallery" revision="ffcb056679521e7d88c8fb56d683d86aa3fc7536" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Gallery2" path="packages/apps/Gallery2" revision="4b5347a8e786904d9341f710defe4c6439b3da1a" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" revision="ce1ff9cca35d9484ce16d711cef7bcb3fa62ee72" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain" revision="946020a1df1a9381c61a7f8b7e1595fa20c55440" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Launcher2" path="packages/apps/Launcher2" revision="fd19730308c4017ba9144cf21a6c45c243294a43" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" revision="37cfdc70819dbd8de270c5e6b710d14c6dcd596b" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" revision="ee1d49c73564fea007b4c5f9c8a5ad203e904d52" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning" revision="0eb0d168c35bc73ae5230ed8dd85bb183f3e75de" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Messaging" path="packages/apps/Messaging" revision="92916eef2bae92be7e44476345eba811fe7a6a8b" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Mms" path="packages/apps/Mms" revision="9b8cfef1b11404e5e5a4472ddea2d33463a389ca" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Music" path="packages/apps/Music" revision="3c14cb254fe0d45b3f7a0ff199886baf83044f36" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX" revision="edd73d5f1512aee4934b35a8d3afee243c1c0168" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Nfc" path="packages/apps/Nfc" revision="6a0dfa14ecebdce04b2a9cad45655ce8dbe426c4" upstream="refs/heads/nfc-aosp.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" revision="bb480686b671dc84c1664e1043e49430da0cd9c9" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/PackageInstaller" path="packages/apps/PackageInstaller" revision="235ec59b6303a5b91ae8e291697d21d2120f7468" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Phone" path="packages/apps/Phone" revision="79731f02b7009206a01182d2cca15dfc8491da09" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/PhoneCommon" path="packages/apps/PhoneCommon" revision="55643fd6d8f11b04e4b688a8ead634972d06b3cb" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Protips" path="packages/apps/Protips" revision="bfa3c5f9851111c978a7cbda9d2e65dfbcd7dd4d" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Provision" path="packages/apps/Provision" revision="6b2548213a9c7cf93ac9dc32f8b82db4ad8e9c4d" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" revision="a3a46c21e2f14d925c8b6187167b172846677287" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/RetailDemo" path="packages/apps/RetailDemo" revision="c5b38e7b2a33d2b5675e61ae085d6b9732e65a80" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/SafetyRegulatoryInfo" path="packages/apps/SafetyRegulatoryInfo" revision="0d7ba453d963e68c391e874954307f4cb49325a6" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Settings" path="packages/apps/Settings" revision="6ca21c152701c941eec53ea0a375e0d8e3b5a34b" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/SmartCardService" path="packages/apps/SmartCardService" revision="29eae320a4bd222b5ff1c092f84f1aebba88d0b7" upstream="refs/heads/nfc-aosp.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/SnapdragonCamera" path="packages/apps/SnapdragonCamera" revision="cdd84111054eed34a17f03bc135d0f773995cb94" upstream="refs/heads/camera.lnx.1.0.r19-rel"/>
+  <project name="platform/packages/apps/SnapdragonGallery" path="packages/apps/SnapdragonGallery" revision="8ebd7611430b7a97c384516c5fe9a09cf35602f1" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/SnapdragonMusic" path="packages/apps/SnapdragonMusic" revision="11592957557ddeab20c39c2732fa90a5b39f732e" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" revision="66ab4aaf8881e57b4e1591f1ad1eec17bc4c44af" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" revision="f47fff0421153f4c20d155df8d0864a7036bdb06" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/SpeechRecorder" path="packages/apps/SpeechRecorder" revision="51cc8462c082a26810f5d7c5a2648232a77e795c" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Stk" path="packages/apps/Stk" revision="bac98835bd97bc1fe9f01d8df6eaf6ab2ceeae7b" upstream="refs/heads/atel.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/StorageManager" path="packages/apps/StorageManager" revision="82471d7e75e4a1cd6cce2d0dd8b54875cbddf29e" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/TV" path="packages/apps/TV" revision="be388584fd6604a5ad0b5031b8ceac5b18d84d19" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Tag" path="packages/apps/Tag" revision="805b18a5b4c44b1a692f7c4eafdc881d8c78c0d8" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Terminal" path="packages/apps/Terminal" revision="79b9ef2730ff0acbba9eb4d14d3592e7f2e25e3d" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/Test/connectivity" path="packages/apps/Test/connectivity" revision="7fe547aadab1b7e0a6c2d584112835f8c08af2e6" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/TvSettings" path="packages/apps/TvSettings" revision="581d489d26b60a2ce85be3a26a203e39d3f863c3" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/UnifiedEmail" path="packages/apps/UnifiedEmail" revision="104b191a4b1a421f605a2731f2b0e309f7a7a883" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/apps/WallpaperPicker" path="packages/apps/WallpaperPicker" revision="b241483c0881994bcfbb2d643c1f35a7ebcd43b0" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/experimental" path="packages/experimental" revision="5d7d053652f2edbca5e6a0bbbee555df5405520a" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME" revision="9f030f9c92e89f8ff1adb3039f04c9a39c76e970" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/inputmethods/OpenWnn" path="packages/inputmethods/OpenWnn" revision="61902845f80c35fa56c736219efb14dacd0cfda3" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/providers/ApplicationsProvider" path="packages/providers/ApplicationsProvider" revision="33d26f5eedb3d3011762ce5b2de66e931bf64b35" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/providers/BlockedNumberProvider" path="packages/providers/BlockedNumberProvider" revision="57cadbf6b372c401689e9456bdedf9ac9e9cecbf" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/providers/BookmarkProvider" path="packages/providers/BookmarkProvider" revision="6ec4bb392332b12162c5a8a1eaba1ee34d389c5c" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/providers/CalendarProvider" path="packages/providers/CalendarProvider" revision="950c520e27ace5ecf5dcc4bed47b3f1d992b6a40" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/providers/CallLogProvider" path="packages/providers/CallLogProvider" revision="efac83e3f9fd5f49ad0ddb38c82aeb9ceff798e7" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/providers/ContactsProvider" path="packages/providers/ContactsProvider" revision="c2e639529bd27399fd401dcdecf0edd1c577246e" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/providers/DownloadProvider" path="packages/providers/DownloadProvider" revision="e9fc896f6ad972a40cdb0f990ae60461f0637735" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/providers/MediaProvider" path="packages/providers/MediaProvider" revision="0f1d2991b6a817cb564f4de334580655abf7317b" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/providers/PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider" revision="5b8a1aed81168b5bdf49beedde644a388cd772fd" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider" revision="4c2e0f4801251ed8093fbc8d60d10205753fe3fb" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/providers/TvProvider" path="packages/providers/TvProvider" revision="7a341ada893f8af1038eecb6520802ac06aa2360" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/providers/UserDictionaryProvider" path="packages/providers/UserDictionaryProvider" revision="c61704db31aa34d2ff3c884efe4718f4339dfc6b" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/screensavers/Basic" path="packages/screensavers/Basic" revision="8c3e4fc59e750b13e937321b0e6c048212e21d67" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/screensavers/PhotoTable" path="packages/screensavers/PhotoTable" revision="617caca44aa3dfea44e79911b6885a36f1c8a6aa" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/screensavers/WebView" path="packages/screensavers/WebView" revision="6e0a80f6faed6191acc8ce1b6c79eada09e9e042" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/services/BuiltInPrintService" path="packages/services/BuiltInPrintService" revision="6546630d5605c604d2261d974b0ae4581688176f" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/services/Car" path="packages/services/Car" revision="0025eafed0a6efd92f145865338d36126621b502" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/services/Mms" path="packages/services/Mms" revision="3167e30689793ced60626ee1b48c9c07d6b7419d" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/services/NetworkRecommendation" path="packages/services/NetworkRecommendation" revision="1c503fb3fa4c137e0b9c917d07b65f35c3760f7a" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/services/Telecomm" path="packages/services/Telecomm" revision="24625186a2a226771bfdd39ece57f899951de02a" upstream="refs/heads/atel.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/services/Telephony" path="packages/services/Telephony" revision="74839a0ad81004f95c0ca81ee8070b6efa6883f6" upstream="refs/heads/atel.lnx.2.9.1.r3-rel"/>
+  <project name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker" revision="861a215dfa69d8203e00985927fb5dbdc6c2dbb5" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/pdk" path="pdk" revision="37951142e14ba4257c70efc2cf50c15a9419a4e3" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/platform_testing" path="platform_testing" revision="76eda0a7337baebf78a4e915614a3decafdbc732" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/abi-dumps/ndk" path="prebuilts/abi-dumps/ndk" revision="55e16cf68bd51e0fd0cf9ce1ec212bca4f440a5b" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/abi-dumps/vndk" path="prebuilts/abi-dumps/vndk" revision="07614c775a21d442106856cf8937f6243ab9171e" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator" revision="da073b124d926d21b991d7c2b2ff4b1f95862777" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/build-tools" path="prebuilts/build-tools" revision="a6deead2b29c1eed2f2e027446cbf073d2fb655a" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/checkcolor" path="prebuilts/checkcolor" revision="f6f661b424f646bc5ddf9e1b1e644abb492b7547" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/checkstyle" path="prebuilts/checkstyle" revision="b782f222d5ad3c1250acb12260f2ddaa0935ca46" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" revision="1188dcf30923cb444143ffa4b83dc951037e76a5" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/deqp" path="prebuilts/deqp" revision="1dee35e05d086bd0261c1110e5b72884f1a9a1cf" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/devtools" path="prebuilts/devtools" revision="4c3b19c11bed6972f2ebf758af4025607b41b11b" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/eclipse" path="prebuilts/eclipse" revision="cf9f78f8cf41b16edf9f712598a42743d5cea4af" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" revision="6d08ca9f45ff685648fd13c75bf5cac4b11c19bb" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="d7d824eaa0690179c4b504209dbb017dfc730cf3" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" revision="26e93f6af47f7bd3a9beb5c102a5f45e19bfa38a" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="0f5ac4a0fb21cff9cdd55c858380f426f8e5fd1b" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" revision="a93d2d3736c481ed4722b3800233b772da701084" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" revision="73ca99196723f810dad42390d154654354f57c16" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" revision="e76a9a506d7ad132f107eb2f7c27b6a8ccb68b91" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" revision="1de7f0f941efde58c8806a30a8dccfaf6ccece74" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/gdb/linux-x86" path="prebuilts/gdb/linux-x86" revision="4adfde8bc82dd39f59e0445588c3e599ada477d2" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/go/linux-x86" path="prebuilts/go/linux-x86" revision="efea46b87b2dcc66da02dfbf66fd901d24c7a091" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin" revision="527a9f0831b3f2771751658f4cfad094a1a3fba6" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/libs/libedit" path="prebuilts/libs/libedit" revision="d32685dba4011664b590b94ad156bc734c2c9bb5" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" revision="1b392d94924cc2c6d3f947224001553bdcc4a34d" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/maven_repo/bumptech" path="prebuilts/maven_repo/bumptech" revision="ad29fe1a1b86eacbd04ac4ab23b90f38ca099f77" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/misc" path="prebuilts/misc" revision="79ae8f00bc5d35c93d953d98511b5d4ca87874fe" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/ndk" path="prebuilts/ndk" revision="11cd02dfb91661c65134cac258cf5924270e9d2b" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" revision="edbb763a2b63074cd468a5d33a17908b2cc06541" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" revision="8cd9781f33e2b19f153b4f38619cffc6d25c6482" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="d203d380022748bbec5cad8915ac961f6e6cf1fe" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/prebuilts/tools" path="prebuilts/tools" revision="ced3add24d968d4b49e383621adefc1a8110d82e" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/sdk" path="sdk" revision="66f0813aa7b41a5431082dda5ecda4c3abdf5a12" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="OnePlusOSS/android_system_bt" path="system/bt" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
+  <project name="platform/system/ca-certificates" path="system/ca-certificates" revision="9301366a5d6970863a22ea7babc732456e74a7e1" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/system/chre" path="system/chre" revision="e6ca5009a73ffa5c7b61ab956cbfbcc99dc29438" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/system/connectivity/wificond" path="system/connectivity/wificond" revision="d6f8d2275691c3162b0225f0c679c685baf1d801" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/system/connectivity/wifilogd" path="system/connectivity/wifilogd" revision="c95b2cee999918ee5eacf52e70e55a47c78d7b5c" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="OnePlusOSS/android_system_core" path="system/core" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
+  <project name="platform/system/extras" path="system/extras" revision="d376cc223c74fadaa7c7d89cca1499036136eec1" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/system/gatekeeper" path="system/gatekeeper" revision="84f8f9fdc2c779ffd938e730d7e950c3958d799e" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/system/hardware/interfaces" path="system/hardware/interfaces" revision="172c1ef90d152907e02efbca4a8b1ee6a4640588" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/system/hwservicemanager" path="system/hwservicemanager" revision="d0b97fcfe62dd152e3d3238565bd1b4f0fe54b15" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/system/keymaster" path="system/keymaster" revision="642c517a2e4032ee0e5708d137f4f1a50d4af760" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/system/libfmq" path="system/libfmq" revision="11e1f02c084dc00aadf37234528ea0d3beacd972" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/system/libhidl" path="system/libhidl" revision="c07b8afc0aa59bedcc9efe0577426ee87e5183b7" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/system/libhwbinder" path="system/libhwbinder" revision="04c8d340df2673746fdc35932952ae4e5e5ef265" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/system/libufdt" path="system/libufdt" revision="bed4053f1eb5283a8a3a5c8559dbe88475380933" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/system/libvintf" path="system/libvintf" revision="29353709599c9b75314d907576e19d5bda28113f" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/system/media" path="system/media" revision="87c7763ef1b32f06814b686f19edf92b0801d79b" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/system/netd" path="system/netd" revision="e4c2b445e70e4d8cf044245486eeb58935fae0df" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/system/nfc" path="system/nfc" revision="ad23795f38a4a695836e81505f6070e016a2a163" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/system/nvram" path="system/nvram" revision="7a2facb0c44fe85fc5e05782c3488cea629d58e9" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" revision="5ffb4dd6a53438da3c6b7230e4a2a7f7e19c9c79" upstream="refs/heads/wlan-service.lnx.1.9.r3-rel"/>
+  <project name="platform/system/security" path="system/security" revision="d6fbe56376b84c1a74e214a388085565dd03dc94" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="OnePlusOSS/android_system_sepolicy" path="system/sepolicy" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
+  <project name="platform/system/tools/aidl" path="system/tools/aidl" revision="821e1d8b5f17415a51330b2fecbf5b2493376eb7" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/system/tools/hidl" path="system/tools/hidl" revision="0412507e2b6d3773768482007b1a834244811f1c" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/system/tpm" path="system/tpm" revision="987689803d813efb9b011236a7853c8f3edba1f6" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/system/update_engine" path="system/update_engine" revision="957619a1ed73bf42448ed5aedf637ef72662f411" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/system/vold" path="system/vold" revision="7a754c93196351142672d4763d79da5c4d8bbd1a" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/test/vts" path="test/vts" revision="b8680b20945dc8758f3669582ccddbaaa710e2f2" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/test/vts-testcase/fuzz" path="test/vts-testcase/fuzz" revision="51506fb8d58ac14bb461b3e50c6c738da0f3f5be" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/test/vts-testcase/hal" path="test/vts-testcase/hal" revision="6e14fe4c6f7d89b8a8eb9efead403e6d05e42ffd" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/test/vts-testcase/hal-trace" path="test/vts-testcase/hal-trace" revision="f38ec699e993eab3d2c7f6bc6734a31fdea94033" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/test/vts-testcase/kernel" path="test/vts-testcase/kernel" revision="0a79b7c75952e7630a1fbf06e2632be75dfb5c39" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/test/vts-testcase/performance" path="test/vts-testcase/performance" revision="2932efa64d91b83c36907442c075b39660783504" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/test/vts-testcase/security" path="test/vts-testcase/security" revision="3950c8bc23c1c809296f266546c25601ed91c336" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/test/vts-testcase/vndk" path="test/vts-testcase/vndk" revision="004e5e0931a2973ddd3d28186e5335bc5c88e993" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/tools/apksig" path="tools/apksig" revision="ac83cc391ed8e370c962a410626691295c3d6983" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/tools/external/fat32lib" path="tools/external/fat32lib" revision="3880776e41ff7def06e351720f2d162f88b58a03" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/tools/external/gradle" path="tools/external/gradle" revision="01eafe283102ebb395c7cc0c22d258fd657c7af7" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/tools/loganalysis" path="tools/loganalysis" revision="856f1ea641eaf61661ce047affbc362ba1ab5966" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/tools/repohooks" path="tools/repohooks" revision="b8105629a8944a69eb058f0d15464bf3aec86103" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/tools/test/connectivity" path="tools/test/connectivity" revision="57e0ae8202c2e5a0de58d0608b69875c7917c8d0" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/tools/tradefederation" path="tools/tradefederation/core" revision="561f0cc21a16ca840af5348fa23ed83163a078c2" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="a73a0d4a0087b0ff4df53a0930883f758cf5928a" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/telephony" revision="35fb6dfc7161a11457ec95f6b50da8bc99edd046" upstream="refs/heads/atel.lnx.2.9.1.r3-rel"/>
+  <project name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/interfaces/opensource/nfc" revision="31d5afed9aad302dcb9ac7bfba8389c2e5de2882" upstream="refs/heads/nfc.lnx.2.9.r7-rel">
+    <linkfile dest="vendor/nxp/interfaces/Android.bp" src="prop_pickup.bp"/>
+  </project>
+  <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/external/libnfc-nci" revision="5af7847671c8a89a6b587ca27eaaddaa3bec44ee" upstream="refs/heads/nfc.lnx.2.9.r3-rel"/>
+  <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/frameworks" revision="5b810821105e9968611f87c16e80a8d437fcc4ef" upstream="refs/heads/nfc.lnx.2.9.r3-rel"/>
+  <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/packages/apps/Nfc" revision="891267daa3267476564e9242d3f69fe937f75361" upstream="refs/heads/nfc.lnx.2.9.r3-rel"/>
+  <project name="OnePlusOSS/android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
+  <project name="platform/vendor/qcom-opensource/bluetooth_ext" path="vendor/qcom/opensource/bluetooth_ext" revision="5fd6b97dbec4e07946e1b144c461e51ad1aec364" upstream="refs/heads/bt.lnx.3.0.r2-rel"/>
+  <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" revision="b9618e7fb27a7e28e326b8733cecd839772aa3d8" upstream="refs/heads/data.lnx.3.0.r3-rel"/>
+  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" revision="7b144c66dc17ac1da2452f72389b1ee325016932" upstream="refs/heads/data.lnx.3.0.r3-rel"/>
+  <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" revision="e17a0e7f08d03ee49769f810a032bafaaf5311b3" upstream="refs/heads/data.lnx.3.0.r3-rel"/>
+  <project name="OnePlusOSS/android_vendor_qcom_opensource_fm" path="vendor/qcom/opensource/fm" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
+  <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" revision="c1bbfeacdc8c23b96ae7ef004507e4a2e4412eae" upstream="refs/heads/wigig.lnx.1.9.r3-rel"/>
+  <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" revision="e4459287f72e511c3d62e7a285be5c6be4b4ac7f" upstream="refs/heads/android-interfaces.lnx.1.0.r2-rel">
+    <copyfile dest="vendor/qcom/opensource/Android.bp" src="os_pickup.bp"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location" revision="ab9a4f62a3809ca2c0f8a777d903f6652c6bcf9d" upstream="refs/heads/location.lnx.2.9.r3-rel"/>
+  <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" revision="053754b3d2550699c3a70eedbe655268cfeeae6c" upstream="refs/heads/core-technologies.lnx.1.9.r3-rel"/>
+  <project name="platform/vendor/qcom-opensource/rcs-service" path="vendor/qcom/opensource/rcs-service" revision="5dccbab946b999207ff3ceb3ac5f3afea6669775" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
+  <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" revision="214ece874ced71fcbeb2fbc0a218b0824be60c34" upstream="refs/heads/data.lnx.3.0.r3-rel"/>
+  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" revision="4a916f792ee26e8af67c69057ce1068dbb737e84" upstream="refs/heads/core-technologies.lnx.1.9.r3-rel"/>
+  <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" revision="c7c1d3b3f2fc8a9f68a4bd554aedc86fd36e543b" upstream="refs/heads/opensource-tools.lnx.1.9.r3-rel"/>
+  <project name="platform/vendor/qcom-opensource/wigig" path="vendor/qcom/opensource/wigig" revision="51dd01d298f76bd2864cdfe46383a76286ae864b" upstream="refs/heads/wigig.lnx.1.9.r3-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" revision="26aec48ecf0f03bd2b3343ae54056bccbe1d3ea9" upstream="refs/heads/wlan-driver.lnx.1.9.r3-rel"/>
+  <project name="OnePlusOSS/android_vendor_qcom-opensource_wlan_qcacld-2.0" path="vendor/qcom/opensource/wlan/qcacld-2.0" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
+  <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="5421637fa243ebeebc49cd67341ff9533c22d299" upstream="refs/heads/wlan-service.lnx.1.9.r3-rel"/>
+  <project name="platform/vendor/qcom/ferrum" path="device/qcom/msm8909" revision="0d827792b65e62ba81f75c48b3dc35ca632cfbbe" upstream="refs/heads/qcom-devices.lnx.1.9.r3-rel"/>
+  <project name="platform/vendor/qcom/thorium_32" path="device/qcom/msm8937_32" revision="c7e1512a7a3cb85aadf37c46e111aec479d52905" upstream="refs/heads/qcom-devices.lnx.1.9.r3-rel"/>
+  <project name="platform/vendor/qcom/thorium_64" path="device/qcom/msm8937_64" revision="256029554b7a298bc4bd501ca68b3382dc19599f" upstream="refs/heads/qcom-devices.lnx.1.9.r3-rel"/>
+  <project name="OnePlusOSS/android_vendor_qcom_thulium" path="device/qcom/msm8996" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
+  <project name="platform/vendor/qcom/titanium_32" path="device/qcom/msm8953_32" revision="64d1bebff25f37f9f558b35828c83ff64e0a30d5" upstream="refs/heads/qcom-devices.lnx.1.9.r3-rel"/>
+  <project name="platform/vendor/qcom/titanium_64" path="device/qcom/msm8953_64" revision="f07c8e7412921cda42c7b9b7b5414350ba61d6f9" upstream="refs/heads/qcom-devices.lnx.1.9.r3-rel"/>
+  <project name="toolchain/binutils" revision="584d0f7d1b9a096948fbd750dde4c760e5e0ee0e" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
+  <project name="OnePlusOSS/android_vendor_oneplus_8996O" path="vendor/oneplus" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
+
 </manifest>
