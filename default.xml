@@ -275,7 +275,7 @@
   <project name="platform/external/selinux" path="external/selinux" revision="2a337e23a273371caa6e5e60afcaa3c9d2586bc7" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
   <project name="platform/external/sfntly" path="external/sfntly" revision="a0398361a7595f031e4bbf416132bb56924164ab" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
   <project name="platform/external/shflags" path="external/shflags" revision="c4876e01829b8cf110ee33267bb1bad1f8ebb51d" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
-  <project name="platform/external/skia" path="external/skia" revision="4fd38da90541bea4a5812ce723d87b5fb8c751e3" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
+  <project name="OnePlusOSS/android_external_skia" path="external/skia" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
   <project name="platform/external/sl4a" path="external/sl4a" revision="448071f3e2e8435b421e98cb892c92edee5482bb" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
   <project name="platform/external/slf4j" path="external/slf4j" revision="6e9286aecedbe7e70ad9e5bcbb336ff391b18f5e" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
   <project name="platform/external/smali" path="external/smali" revision="e63a24a8461a3dc15d356f35e28ca2d51ec736c5" upstream="refs/heads/android-external.lnx.2.9.1.r3-rel"/>
@@ -347,7 +347,7 @@
   <project name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet" revision="956b0a9aee5d43e05efdd79e21f7bcbeeaffc220" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
   <project name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" revision="6a99a190d35facd3405353a214eb0f9f0c4e9a75" upstream="refs/heads/atel.lnx.2.9.1.r3-rel"/>
   <project name="platform/frameworks/opt/net/voip" path="frameworks/opt/net/voip" revision="68a4203ed859d3f4789f1805d0590255827046c4" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
-  <project name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" revision="d9a31d4bb8b4c52ee81942c05d4e51298894232f" upstream="refs/heads/wlan-aosp.lnx.2.9.1.r3-rel"/>
+  <project name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" revision="3cb4d6f7205a0a5162e7260baccab969ea0ac16a" upstream="refs/heads/wlan-aosp.lnx.2.9.1.r3-rel"/>
   <project name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer" revision="0a70587cfd3a5fa937bb5cea6ac2b149ee472b23" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
   <project name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard" revision="cc75f38af115bef18266ffc42245c0fa0d5b1c8c" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
   <project name="OnePlusOSS/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
@@ -371,7 +371,7 @@
   <project name="OnePlusOSS/android_hardware_qcom_camera" path="hardware/qcom/camera" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
   <project name="OnePlusOSS/android_hardware_qcom_display" path="hardware/qcom/display" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
   <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="a58315084bb3278338e8b2a1767ec3587ad6b290" upstream="refs/heads/location.lnx.2.9.r3-rel"/>
-  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" revision="1fa8e45a8c7f6971593cd0b3ac61832434614041" upstream="refs/heads/video-userspace.lnx.2.9.r2-rel"/>
+  <project name="OnePlusOSS/android_hardware_qcom_media" path="hardware/qcom/media" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
   <project name="platform/hardware/qcom/thermal" path="hardware/qcom/thermal" revision="339a9823ecefbc0ff311be4a7d4b94808dc12ece" upstream="refs/heads/qvr.lnx.3.0.r3-rel"/>
   <project name="platform/hardware/qcom/vr" path="hardware/qcom/vr" revision="0a660bae268eb5f110470bf2f005dd45d325b24a" upstream="refs/heads/qvr.lnx.3.0.r3-rel"/>
   <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="860ef2b91daafe73bb2341df159a9794b3b578d0" upstream="refs/heads/wlan-aosp.lnx.2.9.1.r3-rel"/>
@@ -422,7 +422,7 @@
   <project name="platform/packages/apps/Mms" path="packages/apps/Mms" revision="9b8cfef1b11404e5e5a4472ddea2d33463a389ca" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
   <project name="platform/packages/apps/Music" path="packages/apps/Music" revision="3c14cb254fe0d45b3f7a0ff199886baf83044f36" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
   <project name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX" revision="edd73d5f1512aee4934b35a8d3afee243c1c0168" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
-  <project name="platform/packages/apps/Nfc" path="packages/apps/Nfc" revision="6a0dfa14ecebdce04b2a9cad45655ce8dbe426c4" upstream="refs/heads/nfc-aosp.lnx.2.9.1.r3-rel"/>
+  <project name="OnePlusOSS/packages_apps_Nfc" path="packages/apps/Nfc" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
   <project name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" revision="bb480686b671dc84c1664e1043e49430da0cd9c9" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
   <project name="platform/packages/apps/PackageInstaller" path="packages/apps/PackageInstaller" revision="235ec59b6303a5b91ae8e291697d21d2120f7468" upstream="refs/heads/android-framework.lnx.2.9.1.r3-rel"/>
   <project name="platform/packages/apps/Phone" path="packages/apps/Phone" revision="79731f02b7009206a01182d2cca15dfc8491da09" upstream="refs/heads/android_ui.lnx.2.9.1.r3-rel"/>
@@ -559,7 +559,7 @@
   <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/frameworks" revision="5b810821105e9968611f87c16e80a8d437fcc4ef" upstream="refs/heads/nfc.lnx.2.9.r3-rel"/>
   <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/packages/apps/Nfc" revision="891267daa3267476564e9242d3f69fe937f75361" upstream="refs/heads/nfc.lnx.2.9.r3-rel"/>
   <project name="OnePlusOSS/android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="oneplus" revision="oneplus/QC8996_O_8.0"/>
-  <project name="platform/vendor/qcom-opensource/bluetooth_ext" path="vendor/qcom/opensource/bluetooth_ext" revision="5fd6b97dbec4e07946e1b144c461e51ad1aec364" upstream="refs/heads/bt.lnx.3.0.r2-rel"/>
+  <project name="platform/vendor/qcom-opensource/bluetooth_ext" path="vendor/qcom/opensource/bluetooth_ext" revision="8eb8dbc5401da46a757eb2ad3fa155b7f18cfffa" upstream="refs/heads/bt.lnx.3.0.r2-rel"/>
   <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" revision="b9618e7fb27a7e28e326b8733cecd839772aa3d8" upstream="refs/heads/data.lnx.3.0.r3-rel"/>
   <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" revision="7b144c66dc17ac1da2452f72389b1ee325016932" upstream="refs/heads/data.lnx.3.0.r3-rel"/>
   <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" revision="e17a0e7f08d03ee49769f810a032bafaaf5311b3" upstream="refs/heads/data.lnx.3.0.r3-rel"/>

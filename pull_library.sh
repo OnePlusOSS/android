@@ -1424,7 +1424,6 @@ lib64/liblbs_core.so
 lib64/libllvm-glnext.so
 lib64/libllvm-qcom.so
 lib64/libllvm-qgl.so
-lib64/libloc2jnibridge.so
 lib64/libloc_api_v02.so
 lib64/liblocation_api.so
 lib64/liblocationservice_glue.so

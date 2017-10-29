@@ -5,7 +5,7 @@ camera recording notice: Please set ro.product.device in /system/build.prop to O
 Downloading the Source  
 ===
 1. Repo sync all code with default.xml  
-`repo init -u git://github.com/OnePlusOSS/android.git -b oneplus/QC8996_O_8.0 
+`repo init -u git://github.com/OnePlusOSS/android.git -b oneplus/QC8996_O_8.0`
 `repo sync`  
 2. Root your device  
 3. Pull the necessary libraries from your device by executing the script `pull_library.sh`  
@@ -19,7 +19,7 @@ Initialize the environment with the envsetup.sh script.  git a
 **[Choose a Target]**  
 Choose which target to build with lunch.  
 `$ lunch`  
-      enter **26** for msm8996-userdebug  
+      enter **26** for msm8996-userdebug
 **[Build the code]**  
 Build everything with make. GNU make can handle parallel tasks with a -jN argument.  
 `$ make -j4`  
