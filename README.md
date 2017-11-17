@@ -3,7 +3,7 @@ Attention
 Downloading the Source  
 ===
 1. Repo sync all code with default.xml  
-        `repo init -u git://github.com/OnePlusOSS/android.git -b oneplus/QC8998_NMR1_7.1`
+        `repo init -u git://github.com/OnePlusOSS/android.git -b oneplus/QC8998_5T_N_7.1`
         `repo sync`
 2. Root your device  
 3. Pull the necessary libraries from your device by executing the script `pull_library.sh`  
@@ -18,7 +18,6 @@ Initialize the environment with the envsetup.sh script.  git a
 Choose which target to build with lunch.  
 `$ lunch`  
       enter **32 for msm8998-userdebug
-              33 for msm8998-user
 
 **[Build the code]**  
 Build everything with make. GNU make can handle parallel tasks with a -jN argument.  
