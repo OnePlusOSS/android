@@ -15,7 +15,7 @@ Initialize the environment with the envsetup.sh script.  git a
 **[Choose a Target]**  
 Choose which target to build with lunch.  
 `$ lunch`  
-      enter **38** for msm8996-userdebug
+      enter **38** for msm8998-userdebug
 **[Build the code]**  
 Build everything with make. GNU make can handle parallel tasks with a -jN argument.  
 `$ make -j4`  
