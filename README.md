@@ -24,8 +24,7 @@ Let device enter fastboot mode, run
 `$ adb reboot bootloader`  
 Once the device is in fastboot mode, run  
 `$ fastboot flash boot boot.img`  
-`$ fastboot flash system system.img
- $ fastboot flash recovery recovery.img
+`$ fastboot flash system system.img`  
+`$ fastboot flash recovery recovery.img`  
 If you want flash new /data partition, run  
-`$ fastboot flash userdata userdata.img`
-
+`$ fastboot flash userdata userdata.img`  
