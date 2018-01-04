@@ -419,7 +419,6 @@ com.qualcomm.qti.ant@1.0.so
 hw/fingerprint.msm8998.so
 lib_oneplus_facebeauty.so
 lib_oneplus_watermark.so
-lib_oneplus_md.so
 libmms_gyro_vstab.so
 libmms_gyro_vstab_auth.so
 libmms_hal_vstab.so
@@ -868,7 +867,6 @@ lib/libadsprpc.so
 lib/libAlacSwDec.so
 lib/libalarmservice_jni.so
 lib/libApeSwDec.so
-lib/libarcsoft_dualcam_refocus.so
 lib/libAR_jni.so
 lib/libaudcal.so
 lib/libaudioalsa.so
@@ -883,7 +881,6 @@ lib/libc2d30-a3xx.so
 lib/libc2d30-a4xx.so
 lib/libc2d30-a5xx.so
 lib/libc2d30_bltlib.so
-lib/libcamera_bokeh_wrapper.so
 lib/libcamera_cp_bokeh.so
 lib/libcamera_cp_wrapper.so
 lib/libcamera_oneplus_bokeh_wrapper.so
@@ -1294,9 +1291,7 @@ lib/libSonyIMX371RmscLibrary.so
 lib/libspcom.so
 lib/libspl.so
 lib/libssd.so
-lib/libst_disp.so
 lib/libStDrvInt.so
-lib/libStereoblur.so
 lib/libstreamparser.so
 lib/libsubsystem_control.so
 lib/libSubSystemShutdown.so
