@@ -347,7 +347,7 @@
   <project name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet" revision="493579730dabf7200a81f93ab3bc158e908f08e8" upstream="android-framework.lnx.2.9.1.r2-rel"/>
   <project name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" revision="ad665e09b9bd3d0b31932a8c7cacd4c562681074" upstream="atel.lnx.2.9.1.r2-rel"/>
   <project name="platform/frameworks/opt/net/voip" path="frameworks/opt/net/voip" revision="68a4203ed859d3f4789f1805d0590255827046c4" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" revision="1f3b2a887405e0117e995289351b28f19104ff64" upstream="wlan-aosp.lnx.2.9.1.r2-rel"/>
+  <project name="OnePlusOSS/android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="oneplus" revision="oneplus/QC8998_O_8.0"/>
   <project name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer" revision="e1a73300817449665c695eba71d29ec86984f30a" upstream="android-framework.lnx.2.9.1.r2-rel"/>
   <project name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard" revision="03960ebe954d418f9c4c27c0649d397bf38fc0ca" upstream="android-framework.lnx.2.9.1.r2-rel"/>
   <project groups="pdk" name="OnePlusOSS/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="oneplus" revision="oneplus/QC8998_O_8.0"/>
@@ -530,7 +530,7 @@
   <project name="platform/system/nvram" path="system/nvram" revision="7a2facb0c44fe85fc5e05782c3488cea629d58e9" upstream="android-framework.lnx.2.9.1.r2-rel"/>
   <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" revision="c04dba75186574cc1589498118149fd19d78f9eb" upstream="wlan-service.lnx.1.9.r2-rel"/>
   <project name="platform/system/security" path="system/security" revision="07ed51641e915b31b8e578b575a2bbc9b10ecca3" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/system/sepolicy" path="system/sepolicy" revision="8e824e483492d3a063c48c2c3daf0951bfba1de8" upstream="android-framework.lnx.2.9.1.r2-rel"/>
+  <project name="OnePlusOSS/android_system_sepolicy" path="system/sepolicy" remote="oneplus" revision="oneplus/QC8998_O_8.0"/>
   <project name="platform/system/tools/aidl" path="system/tools/aidl" revision="821e1d8b5f17415a51330b2fecbf5b2493376eb7" upstream="android-framework.lnx.2.9.1.r2-rel"/>
   <project name="platform/system/tools/hidl" path="system/tools/hidl" revision="f16fcb68b33f429cf6515a3087c8acf4791df257" upstream="android-framework.lnx.2.9.1.r2-rel"/>
   <project name="platform/system/tpm" path="system/tpm" revision="987689803d813efb9b011236a7853c8f3edba1f6" upstream="android-framework.lnx.2.9.1.r2-rel"/>
@@ -578,7 +578,7 @@
   <project name="platform/vendor/qcom-opensource/wigig" path="vendor/qcom/opensource/wigig" revision="f4b6a07f5474c404c7fefca288944184ade066ab" upstream="wigig.lnx.1.9.r2-rel"/>
   <project name="platform/vendor/qcom-opensource/wlan/fw-api" path="vendor/qcom/opensource/wlan/fw-api" revision="836462d6cf542b4b10bbf6744b3242da3ee08cb8" upstream="wlan-api.lnx.1.1.r22-rel"/>
   <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" revision="86e95288b0648165936aa4572d3fc3f89d5284bd" upstream="wlan-cmn.driver.lnx.1.9.r2-rel"/>
-  <project name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" revision="e8f3f1c274f1449a8467d3c602f4503530752731" upstream="oneplus/QC8998_O_8.0"/>
+  <project name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" revision="oneplus/QC8998_O_8.0"/>
   <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="ff3b4d32fb3420c6e3d50c81543df95986df0e14" upstream="wlan-service.lnx.1.9.r2-rel"/>
   <project name="OnePlusOSS/android_vendor_qcom_cobalt" path="device/qcom/msm8998" remote="oneplus" revision="oneplus/QC8998_O_8.0"/>
   <project name="platform/vendor/qcom/falcon_32" path="device/qcom/sdm660_32" revision="1aaf52d9a9a2bd975b183eb593eb01c68dba7c4b" upstream="qcom-devices.lnx.1.9.r2-rel"/>
