@@ -576,8 +576,8 @@
   <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" revision="4a916f792ee26e8af67c69057ce1068dbb737e84" upstream="core-technologies.lnx.1.9.r2-rel"/>
   <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" revision="a5c583120c4d9cf91c4f0deaa053535a09d5aee0" upstream="opensource-tools.lnx.1.9.r2-rel"/>
   <project name="platform/vendor/qcom-opensource/wigig" path="vendor/qcom/opensource/wigig" revision="f4b6a07f5474c404c7fefca288944184ade066ab" upstream="wigig.lnx.1.9.r2-rel"/>
-  <project name="platform/vendor/qcom-opensource/wlan/fw-api" path="vendor/qcom/opensource/wlan/fw-api" revision="836462d6cf542b4b10bbf6744b3242da3ee08cb8" upstream="wlan-api.lnx.1.1.r22-rel"/>
-  <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" revision="86e95288b0648165936aa4572d3fc3f89d5284bd" upstream="wlan-cmn.driver.lnx.1.9.r2-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/fw-api" path="vendor/qcom/opensource/wlan/fw-api" revision="a177ec58a815921c99c198abbb1475a0bd65d992" upstream="wlan-api.lnx.1.1.r22-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" revision="82ed3b443354d009cc24595edbd6fc9e02a977c8" upstream="wlan-cmn.driver.lnx.1.9.r2-rel"/>
   <project name="OnePlusOSS/android_vendor_qcom-opensource_wlan_qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" remote="oneplus" revision="oneplus/QC8998_O_8.0"/>
   <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="ff3b4d32fb3420c6e3d50c81543df95986df0e14" upstream="wlan-service.lnx.1.9.r2-rel"/>
   <project name="OnePlusOSS/android_vendor_qcom_cobalt" path="device/qcom/msm8998" remote="oneplus" revision="oneplus/QC8998_O_8.0"/>
