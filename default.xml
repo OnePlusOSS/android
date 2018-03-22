@@ -382,7 +382,7 @@
   <project name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt" revision="e4b943a7ece621b09dce62e41b87155dfadd05be" upstream="refs/heads/android-framework.lnx.2.9.2.r1-rel"/>
   <project name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan" revision="f756c26aea4d295e04f36e2be3c7c017775ae8a8" upstream="refs/heads/android-framework.lnx.2.9.2.r1-rel"/>
   <project name="platform/hardware/google/apf" path="hardware/google/apf" revision="4f1b5f27e705d82d0567f4566c17aa838ba413a0" upstream="refs/heads/android-framework.lnx.2.9.2.r1-rel"/>
-  <project name="OnePlusOSS/android_hardware_interfaces" path="hardware/interfaces" remote="oneplus" revision="oneplus/QC8998_O_8.1"/>
+  <project name="OnePlusOSS/android_hardware_interfaces" path="hardware/interfaces" remote="oneplus" revision="oneplus/QC8998_O_8.1.0"/>
   <project name="platform/hardware/invensense" path="hardware/invensense" revision="11e5ff75af866f91622b6008fa13db1c3685ae69" upstream="refs/heads/android-framework.lnx.2.9.2.r1-rel"/>
   <project name="platform/hardware/libhardware" path="hardware/libhardware" revision="268e62b3b3cac04dc411ed702e5ca52b92bba796" upstream="refs/heads/android-framework.lnx.2.9.2.r1-rel"/>
   <project name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" revision="0baa0e883136a19b8719923fc96ff84eab35de09" upstream="refs/heads/android-framework.lnx.2.9.2.r1-rel"/>
