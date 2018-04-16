@@ -36,6 +36,7 @@ lib/hw
 lib/modules
 lib/rfsa/adsp
 lib/soundfx
+usr/keylayout
 vendor
 vendor/bin
 vendor/bin/hw
@@ -386,10 +387,6 @@ libopposfr.so
 libSensorManagerHAL.so
 libVDBlurlessAPI_v2.so
 libVDHDRAPI.so
-libgf_ca.so
-libgf_hal.so
-libgoodixfingerprintd_binder.so
-hw/fingerprint.msm8998.gf.so
 hw/fingerprint.msm8998.so
 libhardware.so
 "
@@ -574,10 +571,6 @@ vendor.qti.hardware.fm@1.0.so
 libnfc-nci.so
 libnfc_nci_jni.so
 vendor.nxp.nxpnfc@1.0.so
-libgf_ca.so
-libgf_hal.so
-libgoodixfingerprintd_binder.so
-hw/fingerprint.msm8998.gf.so
 hw/fingerprint.msm8998.so
 libhardware.so
 "
@@ -588,6 +581,7 @@ do
 done
 
 usr_list="
+keylayout/fpc1020.kl
 "
 
 for i in ${usr_list}
@@ -1748,8 +1742,6 @@ lib/libarcsoft_dualcam_refocus_left.so
 lib/libarcsoft_dualcam_refocus_preview.so
 lib/libarcsoft_dualcam_refocus_right.so
 lib/libblur_channel.so
-lib/libchromatix_imx398_3a_4608x3456_30fps_preview_bokeh.so
-lib/libchromatix_imx398_cpp_4608x3456_snapshot_bokeh.so
 lib/libCpDspFunctions.so
 lib/libdepthmap.so
 lib/libfusionLibrary.so
@@ -1763,6 +1755,10 @@ lib64/hw/gatekeeper.msm8998.so
 lib/hw/gatekeeper.msm8998.so
 bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
+lib/libchromatix_imx398_preview_1080p_cpp.so
+lib/libchromatix_imx398_isp_zsl_snapshot.so
+lib/libchromatix_imx398_3a_wechat_preview.so
+lib/libchromatix_imx398_3a_3264x2448_24fps_preview_bokeh.so
 "
 
 for i in ${vendor_list}

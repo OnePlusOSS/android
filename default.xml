@@ -611,5 +611,5 @@
   <project name="platform/vendor/qcom/falcon_64" path="device/qcom/sdm660_64" revision="c3c5d2628aad041eecabfbd2ff872c3dabbd19a8" upstream="refs/heads/qcom-devices.lnx.2.0.r3-rel"/>
   <project name="platform/vendor/qcom/thulium" path="device/qcom/msm8996" revision="0e5d82bd3a6447eefcb46f8b49f91350310f6ad8" upstream="refs/heads/qcom-devices.lnx.2.0.r3-rel"/>
   <project name="toolchain/binutils" revision="dd7b632eac4d3d51c445f60bb87348b005691703" upstream="refs/heads/android-framework.lnx.2.9.2.r1-rel"/>
-  <project name="OnePlusOSS/android_vendor_oneplus_8998OMR1" path="vendor/oneplus" remote="oneplus" revision="oneplus/QC8998_O_8.1"/>
+  <project name="OnePlusOSS/android_vendor_oneplus_8998OMR1" path="vendor/oneplus" remote="oneplus" revision="oneplus/QC8998_O_OP5_8.1"/>
 </manifest>
