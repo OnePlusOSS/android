@@ -1,10 +1,8 @@
-Attention
-===
 Downloading the Source  
 ===
 1. Repo sync all code with default.xml  
-        `repo init -u git://github.com/OnePlusOSS/android.git -b oneplus/QC8998_N_7.1`
-        `repo sync`
+`repo init -u git://github.com/OnePlusOSS/android.git -b oneplus/QC8998_N_7.1 --depth=1`  
+`repo sync`  
 2. Root your device  
 3. Pull the necessary libraries from your device by executing the script `pull_library.sh`  
 4. After pull_library.sh be executed, a directory  named "vendor" should be generated. Copy this directory to root of project.
@@ -31,4 +29,3 @@ Once the device is in fastboot mode, run
 `$ fastboot flash system system.img`  
 If you want flash new /data partition, run  
 `$ fastboot flash userdata userdata.img`
-
