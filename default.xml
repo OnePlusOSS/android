@@ -2,6 +2,7 @@
 <manifest>
   <remote fetch="ssh://git@privgit.codeaurora.org:9222/external/private_p_LA.UM.7.3/" name="caf" review="codeaurora.org"/>
   <remote fetch="ssh://jyg@grease-china.qualcomm.com:29418/" name="grease" review="grease-china.qualcomm.com"/>
+  <remote fetch=".." name="oneplus" />
   <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2" revision="7218bdd08bec6fd65d06f79b54fcc98a43bdde4c" upstream="refs/heads/uefi.lnx.1.9.r13-rel" remote="caf"/>
   <project groups="p-fs-release,pdk,pdk-cw-fs" name="device/common" revision="770294e776b4b76387c16f508c47e9be3a6b63bb" upstream="refs/heads/ks-aosp.lnx.1.0.r1-rel" remote="caf"/>
   <project groups="p-fs-release,pdk" name="device/generic/arm64" revision="0c87deab3b1d561f314ae12eed7e8681071ee93a" upstream="refs/heads/ks-aosp.lnx.1.0.r1-rel" remote="caf"/>
